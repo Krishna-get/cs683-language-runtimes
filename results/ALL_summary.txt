@@ -1,0 +1,480 @@
+results/cmm_ip_stride.txt:CPU 0 cumulative IPC: 1.738 instructions: 30000002 cycles: 17262461
+results/cmm_ip_stride.txt:CPU 0 Branch Prediction Accuracy: 99.8% MPKI: 0.2789 Average ROB Occupancy at Mispredict: 351.4
+results/cmm_ip_stride.txt:cpu0->LLC TOTAL        ACCESS:    4300540 HIT:    4299504 MISS:       1036 MISS_MERGE:          0
+results/cmm_ip_stride.txt:cpu0->LLC LOAD         ACCESS:    4291653 HIT:    4290619 MISS:       1034 MISS_MERGE:          0
+results/cmm_ip_stride.txt:cpu0->LLC RFO          ACCESS:        522 HIT:        522 MISS:          0 MISS_MERGE:          0
+results/cmm_ip_stride.txt:cpu0->LLC PREFETCH     ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/cmm_ip_stride.txt:cpu0->LLC WRITE        ACCESS:       8349 HIT:       8349 MISS:          0 MISS_MERGE:          0
+results/cmm_ip_stride.txt:cpu0->LLC TRANSLATION  ACCESS:         16 HIT:         14 MISS:          2 MISS_MERGE:          0
+results/cmm_ip_stride.txt:cpu0->LLC PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+results/cmm_ip_stride.txt:cpu0->LLC AVERAGE MISS LATENCY: 152.9 cycles
+results/cmm_ip_stride.txt:cpu0->cpu0_L1D TOTAL        ACCESS:    8566638 HIT:    4214517 MISS:    4352121 MISS_MERGE:      58951
+results/cmm_ip_stride.txt:cpu0->cpu0_L1D LOAD         ACCESS:    8558257 HIT:    4213628 MISS:    4344629 MISS_MERGE:      51997
+results/cmm_ip_stride.txt:cpu0->cpu0_L2C TOTAL        ACCESS:    4301519 HIT:       9328 MISS:    4292191 MISS_MERGE:          0
+results/cmm_ip_stride.txt:cpu0->cpu0_L2C LOAD         ACCESS:    4292632 HIT:        979 MISS:    4291653 MISS_MERGE:          0
+results/cmm_ip_stride.txt:cpu0->cpu0_L2C RFO          ACCESS:        522 HIT:          0 MISS:        522 MISS_MERGE:          0
+results/cmm_ip_stride.txt:cpu0->cpu0_L2C PREFETCH     ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/cmm_ip_stride.txt:cpu0->cpu0_L2C WRITE        ACCESS:       8349 HIT:       8349 MISS:          0 MISS_MERGE:          0
+results/cmm_ip_stride.txt:cpu0->cpu0_L2C TRANSLATION  ACCESS:         16 HIT:          0 MISS:         16 MISS_MERGE:          0
+results/cmm_ip_stride.txt:cpu0->cpu0_L2C PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+results/cmm_ip_stride.txt:cpu0->cpu0_L2C AVERAGE MISS LATENCY: 15.04 cycles
+results/cmm_no.txt:CPU 0 cumulative IPC: 1.738 instructions: 30000002 cycles: 17262461
+results/cmm_no.txt:CPU 0 Branch Prediction Accuracy: 99.8% MPKI: 0.2789 Average ROB Occupancy at Mispredict: 351.4
+results/cmm_no.txt:cpu0->LLC TOTAL        ACCESS:    4300540 HIT:    4299504 MISS:       1036 MISS_MERGE:          0
+results/cmm_no.txt:cpu0->LLC LOAD         ACCESS:    4291653 HIT:    4290619 MISS:       1034 MISS_MERGE:          0
+results/cmm_no.txt:cpu0->LLC RFO          ACCESS:        522 HIT:        522 MISS:          0 MISS_MERGE:          0
+results/cmm_no.txt:cpu0->LLC PREFETCH     ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/cmm_no.txt:cpu0->LLC WRITE        ACCESS:       8349 HIT:       8349 MISS:          0 MISS_MERGE:          0
+results/cmm_no.txt:cpu0->LLC TRANSLATION  ACCESS:         16 HIT:         14 MISS:          2 MISS_MERGE:          0
+results/cmm_no.txt:cpu0->LLC PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+results/cmm_no.txt:cpu0->LLC AVERAGE MISS LATENCY: 152.9 cycles
+results/cmm_no.txt:cpu0->cpu0_L1D TOTAL        ACCESS:    8566638 HIT:    4214517 MISS:    4352121 MISS_MERGE:      58951
+results/cmm_no.txt:cpu0->cpu0_L1D LOAD         ACCESS:    8558257 HIT:    4213628 MISS:    4344629 MISS_MERGE:      51997
+results/cmm_no.txt:cpu0->cpu0_L2C TOTAL        ACCESS:    4301519 HIT:       9328 MISS:    4292191 MISS_MERGE:          0
+results/cmm_no.txt:cpu0->cpu0_L2C LOAD         ACCESS:    4292632 HIT:        979 MISS:    4291653 MISS_MERGE:          0
+results/cmm_no.txt:cpu0->cpu0_L2C RFO          ACCESS:        522 HIT:          0 MISS:        522 MISS_MERGE:          0
+results/cmm_no.txt:cpu0->cpu0_L2C PREFETCH     ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/cmm_no.txt:cpu0->cpu0_L2C WRITE        ACCESS:       8349 HIT:       8349 MISS:          0 MISS_MERGE:          0
+results/cmm_no.txt:cpu0->cpu0_L2C TRANSLATION  ACCESS:         16 HIT:          0 MISS:         16 MISS_MERGE:          0
+results/cmm_no.txt:cpu0->cpu0_L2C PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+results/cmm_no.txt:cpu0->cpu0_L2C AVERAGE MISS LATENCY: 15.04 cycles
+results/cmm_spp_dev.txt:CPU 0 cumulative IPC: 1.748 instructions: 30000001 cycles: 17162152
+results/cmm_spp_dev.txt:CPU 0 Branch Prediction Accuracy: 99.8% MPKI: 0.2789 Average ROB Occupancy at Mispredict: 351.4
+results/cmm_spp_dev.txt:cpu0->LLC TOTAL        ACCESS:    4333971 HIT:    4332359 MISS:       1612 MISS_MERGE:        583
+results/cmm_spp_dev.txt:cpu0->LLC LOAD         ACCESS:    4291765 HIT:    4291500 MISS:        265 MISS_MERGE:          7
+results/cmm_spp_dev.txt:cpu0->LLC RFO          ACCESS:        522 HIT:        522 MISS:          0 MISS_MERGE:          0
+results/cmm_spp_dev.txt:cpu0->LLC PREFETCH     ACCESS:      33319 HIT:      31974 MISS:       1345 MISS_MERGE:        576
+results/cmm_spp_dev.txt:cpu0->LLC WRITE        ACCESS:       8349 HIT:       8349 MISS:          0 MISS_MERGE:          0
+results/cmm_spp_dev.txt:cpu0->LLC TRANSLATION  ACCESS:         16 HIT:         14 MISS:          2 MISS_MERGE:          0
+results/cmm_spp_dev.txt:cpu0->LLC PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+results/cmm_spp_dev.txt:cpu0->LLC AVERAGE MISS LATENCY: 193.7 cycles
+results/cmm_spp_dev.txt:cpu0->cpu0_L1D TOTAL        ACCESS:    8566654 HIT:    4216034 MISS:    4350620 MISS_MERGE:      57436
+results/cmm_spp_dev.txt:cpu0->cpu0_L1D LOAD         ACCESS:    8558273 HIT:    4215539 MISS:    4342734 MISS_MERGE:      50088
+results/cmm_spp_dev.txt:cpu0->cpu0_L2C TOTAL        ACCESS:    8003796 HIT:      35663 MISS:    7968133 MISS_MERGE:    3642512
+results/cmm_spp_dev.txt:cpu0->cpu0_L2C LOAD         ACCESS:    4292646 HIT:        708 MISS:    4291938 MISS_MERGE:        174
+results/cmm_spp_dev.txt:cpu0->cpu0_L2C RFO          ACCESS:        522 HIT:          0 MISS:        522 MISS_MERGE:          0
+results/cmm_spp_dev.txt:cpu0->cpu0_L2C PREFETCH     ACCESS:    3702263 HIT:      26606 MISS:    3675657 MISS_MERGE:    3642338
+results/cmm_spp_dev.txt:cpu0->cpu0_L2C WRITE        ACCESS:       8349 HIT:       8349 MISS:          0 MISS_MERGE:          0
+results/cmm_spp_dev.txt:cpu0->cpu0_L2C TRANSLATION  ACCESS:         16 HIT:          0 MISS:         16 MISS_MERGE:          0
+results/cmm_spp_dev.txt:cpu0->cpu0_L2C PREFETCH REQUESTED:    3703732 ISSUED:    3702262 USEFUL:        353 USELESS:        294
+results/cmm_spp_dev.txt:cpu0->cpu0_L2C AVERAGE MISS LATENCY: 15.01 cycles
+results/cll_ip_stride.txt:CPU 0 cumulative IPC: 0.04304 instructions: 30000000 cycles: 696994007
+results/cll_ip_stride.txt:CPU 0 Branch Prediction Accuracy: 100% MPKI: 0.0002667 Average ROB Occupancy at Mispredict: 352
+results/cll_ip_stride.txt:cpu0->LLC TOTAL        ACCESS:    3581745 HIT:     559302 MISS:    3022443 MISS_MERGE:          0
+results/cll_ip_stride.txt:cpu0->LLC LOAD         ACCESS:    3578205 HIT:     558959 MISS:    3019246 MISS_MERGE:          0
+results/cll_ip_stride.txt:cpu0->LLC RFO          ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/cll_ip_stride.txt:cpu0->LLC PREFETCH     ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/cll_ip_stride.txt:cpu0->LLC WRITE        ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/cll_ip_stride.txt:cpu0->LLC TRANSLATION  ACCESS:       3540 HIT:        343 MISS:       3197 MISS_MERGE:          0
+results/cll_ip_stride.txt:cpu0->LLC PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+results/cll_ip_stride.txt:cpu0->LLC AVERAGE MISS LATENCY: 178.7 cycles
+results/cll_ip_stride.txt:cpu0->cpu0_L1D TOTAL        ACCESS:    9388839 HIT:    1392264 MISS:    7996575 MISS_MERGE:    3735880
+results/cll_ip_stride.txt:cpu0->cpu0_L1D LOAD         ACCESS:    7499987 HIT:      28226 MISS:    7471761 MISS_MERGE:    3735880
+results/cll_ip_stride.txt:cpu0->cpu0_L2C TOTAL        ACCESS:    4260695 HIT:     678950 MISS:    3581745 MISS_MERGE:          0
+results/cll_ip_stride.txt:cpu0->cpu0_L2C LOAD         ACCESS:    3735881 HIT:     157676 MISS:    3578205 MISS_MERGE:          0
+results/cll_ip_stride.txt:cpu0->cpu0_L2C RFO          ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/cll_ip_stride.txt:cpu0->cpu0_L2C PREFETCH     ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/cll_ip_stride.txt:cpu0->cpu0_L2C WRITE        ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/cll_ip_stride.txt:cpu0->cpu0_L2C TRANSLATION  ACCESS:     524814 HIT:     521274 MISS:       3540 MISS_MERGE:          0
+results/cll_ip_stride.txt:cpu0->cpu0_L2C PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+results/cll_ip_stride.txt:cpu0->cpu0_L2C AVERAGE MISS LATENCY: 166.6 cycles
+results/cll_no.txt:CPU 0 cumulative IPC: 0.04304 instructions: 30000000 cycles: 696994007
+results/cll_no.txt:CPU 0 Branch Prediction Accuracy: 100% MPKI: 0.0002667 Average ROB Occupancy at Mispredict: 352
+results/cll_no.txt:cpu0->LLC TOTAL        ACCESS:    3581745 HIT:     559302 MISS:    3022443 MISS_MERGE:          0
+results/cll_no.txt:cpu0->LLC LOAD         ACCESS:    3578205 HIT:     558959 MISS:    3019246 MISS_MERGE:          0
+results/cll_no.txt:cpu0->LLC RFO          ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/cll_no.txt:cpu0->LLC PREFETCH     ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/cll_no.txt:cpu0->LLC WRITE        ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/cll_no.txt:cpu0->LLC TRANSLATION  ACCESS:       3540 HIT:        343 MISS:       3197 MISS_MERGE:          0
+results/cll_no.txt:cpu0->LLC PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+results/cll_no.txt:cpu0->LLC AVERAGE MISS LATENCY: 178.7 cycles
+results/cll_no.txt:cpu0->cpu0_L1D TOTAL        ACCESS:    9388839 HIT:    1392264 MISS:    7996575 MISS_MERGE:    3735880
+results/cll_no.txt:cpu0->cpu0_L1D LOAD         ACCESS:    7499987 HIT:      28226 MISS:    7471761 MISS_MERGE:    3735880
+results/cll_no.txt:cpu0->cpu0_L2C TOTAL        ACCESS:    4260695 HIT:     678950 MISS:    3581745 MISS_MERGE:          0
+results/cll_no.txt:cpu0->cpu0_L2C LOAD         ACCESS:    3735881 HIT:     157676 MISS:    3578205 MISS_MERGE:          0
+results/cll_no.txt:cpu0->cpu0_L2C RFO          ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/cll_no.txt:cpu0->cpu0_L2C PREFETCH     ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/cll_no.txt:cpu0->cpu0_L2C WRITE        ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/cll_no.txt:cpu0->cpu0_L2C TRANSLATION  ACCESS:     524814 HIT:     521274 MISS:       3540 MISS_MERGE:          0
+results/cll_no.txt:cpu0->cpu0_L2C PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+results/cll_no.txt:cpu0->cpu0_L2C AVERAGE MISS LATENCY: 166.6 cycles
+results/cll_spp_dev.txt:CPU 0 cumulative IPC: 0.04304 instructions: 30000000 cycles: 697041307
+results/cll_spp_dev.txt:CPU 0 Branch Prediction Accuracy: 100% MPKI: 0.0002667 Average ROB Occupancy at Mispredict: 352
+results/cll_spp_dev.txt:cpu0->LLC TOTAL        ACCESS:    3585200 HIT:     560150 MISS:    3025050 MISS_MERGE:          0
+results/cll_spp_dev.txt:cpu0->LLC LOAD         ACCESS:    3578200 HIT:     559116 MISS:    3019084 MISS_MERGE:          0
+results/cll_spp_dev.txt:cpu0->LLC RFO          ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/cll_spp_dev.txt:cpu0->LLC PREFETCH     ACCESS:       3459 HIT:        691 MISS:       2768 MISS_MERGE:          0
+results/cll_spp_dev.txt:cpu0->LLC WRITE        ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/cll_spp_dev.txt:cpu0->LLC TRANSLATION  ACCESS:       3541 HIT:        343 MISS:       3198 MISS_MERGE:          0
+results/cll_spp_dev.txt:cpu0->LLC PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+results/cll_spp_dev.txt:cpu0->LLC AVERAGE MISS LATENCY: 178.7 cycles
+results/cll_spp_dev.txt:cpu0->cpu0_L1D TOTAL        ACCESS:    9388839 HIT:    1392264 MISS:    7996575 MISS_MERGE:    3735880
+results/cll_spp_dev.txt:cpu0->cpu0_L1D LOAD         ACCESS:    7499987 HIT:      28226 MISS:    7471761 MISS_MERGE:    3735880
+results/cll_spp_dev.txt:cpu0->cpu0_L2C TOTAL        ACCESS:    7933413 HIT:     830413 MISS:    7103000 MISS_MERGE:    3517800
+results/cll_spp_dev.txt:cpu0->cpu0_L2C LOAD         ACCESS:    3735881 HIT:     157681 MISS:    3578200 MISS_MERGE:          0
+results/cll_spp_dev.txt:cpu0->cpu0_L2C RFO          ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/cll_spp_dev.txt:cpu0->cpu0_L2C PREFETCH     ACCESS:    3672718 HIT:     151459 MISS:    3521259 MISS_MERGE:    3517800
+results/cll_spp_dev.txt:cpu0->cpu0_L2C WRITE        ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/cll_spp_dev.txt:cpu0->cpu0_L2C TRANSLATION  ACCESS:     524814 HIT:     521273 MISS:       3541 MISS_MERGE:          0
+results/cll_spp_dev.txt:cpu0->cpu0_L2C PREFETCH REQUESTED:    3672718 ISSUED:    3672718 USEFUL:          0 USELESS:          0
+results/cll_spp_dev.txt:cpu0->cpu0_L2C AVERAGE MISS LATENCY: 166.7 cycles
+results/jll_ip_stride.txt:CPU 0 cumulative IPC: 0.1143 instructions: 30000000 cycles: 262447223
+results/jll_ip_stride.txt:CPU 0 Branch Prediction Accuracy: 100% MPKI: 0.0008 Average ROB Occupancy at Mispredict: 161.3
+results/jll_ip_stride.txt:cpu0->LLC TOTAL        ACCESS:    4535533 HIT:     407653 MISS:    4127880 MISS_MERGE:          0
+results/jll_ip_stride.txt:cpu0->LLC LOAD         ACCESS:    4530288 HIT:     406886 MISS:    4123402 MISS_MERGE:          0
+results/jll_ip_stride.txt:cpu0->LLC RFO          ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/jll_ip_stride.txt:cpu0->LLC PREFETCH     ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/jll_ip_stride.txt:cpu0->LLC WRITE        ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/jll_ip_stride.txt:cpu0->LLC TRANSLATION  ACCESS:       5245 HIT:        767 MISS:       4478 MISS_MERGE:          0
+results/jll_ip_stride.txt:cpu0->LLC PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+results/jll_ip_stride.txt:cpu0->LLC AVERAGE MISS LATENCY: 212.9 cycles
+results/jll_ip_stride.txt:cpu0->cpu0_L1D TOTAL        ACCESS:   12443769 HIT:    3066093 MISS:    9377676 MISS_MERGE:    3616173
+results/jll_ip_stride.txt:cpu0->cpu0_L1D LOAD         ACCESS:    8275738 HIT:      15585 MISS:    8260153 MISS_MERGE:    3613989
+results/jll_ip_stride.txt:cpu0->cpu0_L2C TOTAL        ACCESS:    5761503 HIT:    1225970 MISS:    4535533 MISS_MERGE:          0
+results/jll_ip_stride.txt:cpu0->cpu0_L2C LOAD         ACCESS:    4646164 HIT:     115876 MISS:    4530288 MISS_MERGE:          0
+results/jll_ip_stride.txt:cpu0->cpu0_L2C RFO          ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/jll_ip_stride.txt:cpu0->cpu0_L2C PREFETCH     ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/jll_ip_stride.txt:cpu0->cpu0_L2C WRITE        ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/jll_ip_stride.txt:cpu0->cpu0_L2C TRANSLATION  ACCESS:    1115339 HIT:    1110094 MISS:       5245 MISS_MERGE:          0
+results/jll_ip_stride.txt:cpu0->cpu0_L2C PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+results/jll_ip_stride.txt:cpu0->cpu0_L2C AVERAGE MISS LATENCY: 209.7 cycles
+results/jll_no.txt:CPU 0 cumulative IPC: 0.1143 instructions: 30000000 cycles: 262447223
+results/jll_no.txt:CPU 0 Branch Prediction Accuracy: 100% MPKI: 0.0008 Average ROB Occupancy at Mispredict: 161.3
+results/jll_no.txt:cpu0->LLC TOTAL        ACCESS:    4535533 HIT:     407653 MISS:    4127880 MISS_MERGE:          0
+results/jll_no.txt:cpu0->LLC LOAD         ACCESS:    4530288 HIT:     406886 MISS:    4123402 MISS_MERGE:          0
+results/jll_no.txt:cpu0->LLC RFO          ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/jll_no.txt:cpu0->LLC PREFETCH     ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/jll_no.txt:cpu0->LLC WRITE        ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/jll_no.txt:cpu0->LLC TRANSLATION  ACCESS:       5245 HIT:        767 MISS:       4478 MISS_MERGE:          0
+results/jll_no.txt:cpu0->LLC PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+results/jll_no.txt:cpu0->LLC AVERAGE MISS LATENCY: 212.9 cycles
+results/jll_no.txt:cpu0->cpu0_L1D TOTAL        ACCESS:   12443769 HIT:    3066093 MISS:    9377676 MISS_MERGE:    3616173
+results/jll_no.txt:cpu0->cpu0_L1D LOAD         ACCESS:    8275738 HIT:      15585 MISS:    8260153 MISS_MERGE:    3613989
+results/jll_no.txt:cpu0->cpu0_L2C TOTAL        ACCESS:    5761503 HIT:    1225970 MISS:    4535533 MISS_MERGE:          0
+results/jll_no.txt:cpu0->cpu0_L2C LOAD         ACCESS:    4646164 HIT:     115876 MISS:    4530288 MISS_MERGE:          0
+results/jll_no.txt:cpu0->cpu0_L2C RFO          ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/jll_no.txt:cpu0->cpu0_L2C PREFETCH     ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/jll_no.txt:cpu0->cpu0_L2C WRITE        ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/jll_no.txt:cpu0->cpu0_L2C TRANSLATION  ACCESS:    1115339 HIT:    1110094 MISS:       5245 MISS_MERGE:          0
+results/jll_no.txt:cpu0->cpu0_L2C PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+results/jll_no.txt:cpu0->cpu0_L2C AVERAGE MISS LATENCY: 209.7 cycles
+results/jll_spp_dev.txt:CPU 0 cumulative IPC: 0.1118 instructions: 30000003 cycles: 268351488
+results/jll_spp_dev.txt:CPU 0 Branch Prediction Accuracy: 100% MPKI: 0.0008 Average ROB Occupancy at Mispredict: 161.3
+results/jll_spp_dev.txt:cpu0->LLC TOTAL        ACCESS:    6180757 HIT:     648241 MISS:    5532516 MISS_MERGE:         22
+results/jll_spp_dev.txt:cpu0->LLC LOAD         ACCESS:    4530250 HIT:     462035 MISS:    4068215 MISS_MERGE:          6
+results/jll_spp_dev.txt:cpu0->LLC RFO          ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/jll_spp_dev.txt:cpu0->LLC PREFETCH     ACCESS:    1645130 HIT:     185550 MISS:    1459580 MISS_MERGE:         16
+results/jll_spp_dev.txt:cpu0->LLC WRITE        ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/jll_spp_dev.txt:cpu0->LLC TRANSLATION  ACCESS:       5377 HIT:        656 MISS:       4721 MISS_MERGE:          0
+results/jll_spp_dev.txt:cpu0->LLC PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+results/jll_spp_dev.txt:cpu0->LLC AVERAGE MISS LATENCY: 220.8 cycles
+results/jll_spp_dev.txt:cpu0->cpu0_L1D TOTAL        ACCESS:   12443929 HIT:    3066226 MISS:    9377703 MISS_MERGE:    3616197
+results/jll_spp_dev.txt:cpu0->cpu0_L1D LOAD         ACCESS:    8275815 HIT:      15577 MISS:    8260238 MISS_MERGE:    3614018
+results/jll_spp_dev.txt:cpu0->cpu0_L2C TOTAL        ACCESS:   10500081 HIT:    1364055 MISS:    9136026 MISS_MERGE:    2955270
+results/jll_spp_dev.txt:cpu0->cpu0_L2C LOAD         ACCESS:    4646220 HIT:     115971 MISS:    4530249 MISS_MERGE:          0
+results/jll_spp_dev.txt:cpu0->cpu0_L2C RFO          ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/jll_spp_dev.txt:cpu0->cpu0_L2C PREFETCH     ACCESS:    4738575 HIT:     138175 MISS:    4600400 MISS_MERGE:    2955270
+results/jll_spp_dev.txt:cpu0->cpu0_L2C WRITE        ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/jll_spp_dev.txt:cpu0->cpu0_L2C TRANSLATION  ACCESS:    1115286 HIT:    1109909 MISS:       5377 MISS_MERGE:          0
+results/jll_spp_dev.txt:cpu0->cpu0_L2C PREFETCH REQUESTED:    4738570 ISSUED:    4738570 USEFUL:          0 USELESS:          8
+results/jll_spp_dev.txt:cpu0->cpu0_L2C AVERAGE MISS LATENCY: 214.2 cycles
+results/jll2_ip_stride.txt:CPU 0 cumulative IPC: 0.2487 instructions: 30000000 cycles: 120623090
+results/jll2_ip_stride.txt:CPU 0 Branch Prediction Accuracy: 99.94% MPKI: 0.0647 Average ROB Occupancy at Mispredict: 101.4
+results/jll2_ip_stride.txt:cpu0->LLC TOTAL        ACCESS:    1099866 HIT:     111308 MISS:     988558 MISS_MERGE:          0
+results/jll2_ip_stride.txt:cpu0->LLC LOAD         ACCESS:    1091478 HIT:     104204 MISS:     987274 MISS_MERGE:          0
+results/jll2_ip_stride.txt:cpu0->LLC RFO          ACCESS:       2170 HIT:       2122 MISS:         48 MISS_MERGE:          0
+results/jll2_ip_stride.txt:cpu0->LLC PREFETCH     ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/jll2_ip_stride.txt:cpu0->LLC WRITE        ACCESS:       2555 HIT:       2529 MISS:         26 MISS_MERGE:          0
+results/jll2_ip_stride.txt:cpu0->LLC TRANSLATION  ACCESS:       3663 HIT:       2453 MISS:       1210 MISS_MERGE:          0
+results/jll2_ip_stride.txt:cpu0->LLC PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+results/jll2_ip_stride.txt:cpu0->LLC AVERAGE MISS LATENCY: 194.3 cycles
+results/jll2_ip_stride.txt:cpu0->cpu0_L1D TOTAL        ACCESS:    8051951 HIT:    5805896 MISS:    2246055 MISS_MERGE:     844258
+results/jll2_ip_stride.txt:cpu0->cpu0_L1D LOAD         ACCESS:    4027890 HIT:    2073778 MISS:    1954112 MISS_MERGE:     832806
+results/jll2_ip_stride.txt:cpu0->cpu0_L2C TOTAL        ACCESS:    1409606 HIT:     312295 MISS:    1097311 MISS_MERGE:          0
+results/jll2_ip_stride.txt:cpu0->cpu0_L2C LOAD         ACCESS:    1121618 HIT:      30140 MISS:    1091478 MISS_MERGE:          0
+results/jll2_ip_stride.txt:cpu0->cpu0_L2C RFO          ACCESS:       6929 HIT:       4759 MISS:       2170 MISS_MERGE:          0
+results/jll2_ip_stride.txt:cpu0->cpu0_L2C PREFETCH     ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/jll2_ip_stride.txt:cpu0->cpu0_L2C WRITE        ACCESS:       7497 HIT:       7497 MISS:          0 MISS_MERGE:          0
+results/jll2_ip_stride.txt:cpu0->cpu0_L2C TRANSLATION  ACCESS:     273562 HIT:     269899 MISS:       3663 MISS_MERGE:          0
+results/jll2_ip_stride.txt:cpu0->cpu0_L2C PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+results/jll2_ip_stride.txt:cpu0->cpu0_L2C AVERAGE MISS LATENCY: 191 cycles
+results/jll2_no.txt:CPU 0 cumulative IPC: 0.2487 instructions: 30000000 cycles: 120623090
+results/jll2_no.txt:CPU 0 Branch Prediction Accuracy: 99.94% MPKI: 0.0647 Average ROB Occupancy at Mispredict: 101.4
+results/jll2_no.txt:cpu0->LLC TOTAL        ACCESS:    1099866 HIT:     111308 MISS:     988558 MISS_MERGE:          0
+results/jll2_no.txt:cpu0->LLC LOAD         ACCESS:    1091478 HIT:     104204 MISS:     987274 MISS_MERGE:          0
+results/jll2_no.txt:cpu0->LLC RFO          ACCESS:       2170 HIT:       2122 MISS:         48 MISS_MERGE:          0
+results/jll2_no.txt:cpu0->LLC PREFETCH     ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/jll2_no.txt:cpu0->LLC WRITE        ACCESS:       2555 HIT:       2529 MISS:         26 MISS_MERGE:          0
+results/jll2_no.txt:cpu0->LLC TRANSLATION  ACCESS:       3663 HIT:       2453 MISS:       1210 MISS_MERGE:          0
+results/jll2_no.txt:cpu0->LLC PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+results/jll2_no.txt:cpu0->LLC AVERAGE MISS LATENCY: 194.3 cycles
+results/jll2_no.txt:cpu0->cpu0_L1D TOTAL        ACCESS:    8051951 HIT:    5805896 MISS:    2246055 MISS_MERGE:     844258
+results/jll2_no.txt:cpu0->cpu0_L1D LOAD         ACCESS:    4027890 HIT:    2073778 MISS:    1954112 MISS_MERGE:     832806
+results/jll2_no.txt:cpu0->cpu0_L2C TOTAL        ACCESS:    1409606 HIT:     312295 MISS:    1097311 MISS_MERGE:          0
+results/jll2_no.txt:cpu0->cpu0_L2C LOAD         ACCESS:    1121618 HIT:      30140 MISS:    1091478 MISS_MERGE:          0
+results/jll2_no.txt:cpu0->cpu0_L2C RFO          ACCESS:       6929 HIT:       4759 MISS:       2170 MISS_MERGE:          0
+results/jll2_no.txt:cpu0->cpu0_L2C PREFETCH     ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/jll2_no.txt:cpu0->cpu0_L2C WRITE        ACCESS:       7497 HIT:       7497 MISS:          0 MISS_MERGE:          0
+results/jll2_no.txt:cpu0->cpu0_L2C TRANSLATION  ACCESS:     273562 HIT:     269899 MISS:       3663 MISS_MERGE:          0
+results/jll2_no.txt:cpu0->cpu0_L2C PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+results/jll2_no.txt:cpu0->cpu0_L2C AVERAGE MISS LATENCY: 191 cycles
+results/jll2_spp_dev.txt:CPU 0 cumulative IPC: 0.2449 instructions: 30000000 cycles: 122505320
+results/jll2_spp_dev.txt:CPU 0 Branch Prediction Accuracy: 99.94% MPKI: 0.0647 Average ROB Occupancy at Mispredict: 101.7
+results/jll2_spp_dev.txt:cpu0->LLC TOTAL        ACCESS:    1943941 HIT:     234992 MISS:    1708949 MISS_MERGE:      10628
+results/jll2_spp_dev.txt:cpu0->LLC LOAD         ACCESS:    1091426 HIT:     135013 MISS:     956413 MISS_MERGE:      10616
+results/jll2_spp_dev.txt:cpu0->LLC RFO          ACCESS:       2194 HIT:       2014 MISS:        180 MISS_MERGE:          4
+results/jll2_spp_dev.txt:cpu0->LLC PREFETCH     ACCESS:     844000 HIT:      93425 MISS:     750575 MISS_MERGE:          8
+results/jll2_spp_dev.txt:cpu0->LLC WRITE        ACCESS:       2571 HIT:       2317 MISS:        254 MISS_MERGE:          0
+results/jll2_spp_dev.txt:cpu0->LLC TRANSLATION  ACCESS:       3750 HIT:       2223 MISS:       1527 MISS_MERGE:          0
+results/jll2_spp_dev.txt:cpu0->LLC PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+results/jll2_spp_dev.txt:cpu0->LLC AVERAGE MISS LATENCY: 203.5 cycles
+results/jll2_spp_dev.txt:cpu0->cpu0_L1D TOTAL        ACCESS:    8051955 HIT:    5800743 MISS:    2251212 MISS_MERGE:     849417
+results/jll2_spp_dev.txt:cpu0->cpu0_L1D LOAD         ACCESS:    4027875 HIT:    2068984 MISS:    1958891 MISS_MERGE:     837586
+results/jll2_spp_dev.txt:cpu0->cpu0_L2C TOTAL        ACCESS:    2514824 HIT:     351777 MISS:    2163047 MISS_MERGE:     221677
+results/jll2_spp_dev.txt:cpu0->cpu0_L2C LOAD         ACCESS:    1121617 HIT:      30133 MISS:    1091484 MISS_MERGE:         58
+results/jll2_spp_dev.txt:cpu0->cpu0_L2C RFO          ACCESS:       6928 HIT:       4734 MISS:       2194 MISS_MERGE:          0
+results/jll2_spp_dev.txt:cpu0->cpu0_L2C PREFETCH     ACCESS:    1105220 HIT:      39601 MISS:    1065619 MISS_MERGE:     221619
+results/jll2_spp_dev.txt:cpu0->cpu0_L2C WRITE        ACCESS:       7497 HIT:       7497 MISS:          0 MISS_MERGE:          0
+results/jll2_spp_dev.txt:cpu0->cpu0_L2C TRANSLATION  ACCESS:     273562 HIT:     269812 MISS:       3750 MISS_MERGE:          0
+results/jll2_spp_dev.txt:cpu0->cpu0_L2C PREFETCH REQUESTED:    1105220 ISSUED:    1105220 USEFUL:        221 USELESS:        221
+results/jll2_spp_dev.txt:cpu0->cpu0_L2C AVERAGE MISS LATENCY: 193.6 cycles
+results/jll3_ip_stride.txt:CPU 0 cumulative IPC: 0.09292 instructions: 30000004 cycles: 322851411
+results/jll3_ip_stride.txt:CPU 0 Branch Prediction Accuracy: 100% MPKI: 0.0002 Average ROB Occupancy at Mispredict: 307.7
+results/jll3_ip_stride.txt:cpu0->LLC TOTAL        ACCESS:    2987811 HIT:     270173 MISS:    2717638 MISS_MERGE:          0
+results/jll3_ip_stride.txt:cpu0->LLC LOAD         ACCESS:    2985746 HIT:     269938 MISS:    2715808 MISS_MERGE:          0
+results/jll3_ip_stride.txt:cpu0->LLC RFO          ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/jll3_ip_stride.txt:cpu0->LLC PREFETCH     ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/jll3_ip_stride.txt:cpu0->LLC WRITE        ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/jll3_ip_stride.txt:cpu0->LLC TRANSLATION  ACCESS:       2065 HIT:        235 MISS:       1830 MISS_MERGE:          0
+results/jll3_ip_stride.txt:cpu0->LLC PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+results/jll3_ip_stride.txt:cpu0->LLC AVERAGE MISS LATENCY: 194.7 cycles
+results/jll3_ip_stride.txt:cpu0->cpu0_L1D TOTAL        ACCESS:    8202274 HIT:    2022440 MISS:    6179834 MISS_MERGE:    2382342
+results/jll3_ip_stride.txt:cpu0->cpu0_L1D LOAD         ACCESS:    5454545 HIT:      11116 MISS:    5443429 MISS_MERGE:    2381583
+results/jll3_ip_stride.txt:cpu0->cpu0_L2C TOTAL        ACCESS:    3797492 HIT:     809682 MISS:    2987810 MISS_MERGE:          0
+results/jll3_ip_stride.txt:cpu0->cpu0_L2C LOAD         ACCESS:    3061846 HIT:      76101 MISS:    2985745 MISS_MERGE:          0
+results/jll3_ip_stride.txt:cpu0->cpu0_L2C RFO          ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/jll3_ip_stride.txt:cpu0->cpu0_L2C PREFETCH     ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/jll3_ip_stride.txt:cpu0->cpu0_L2C WRITE        ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/jll3_ip_stride.txt:cpu0->cpu0_L2C TRANSLATION  ACCESS:     735646 HIT:     733581 MISS:       2065 MISS_MERGE:          0
+results/jll3_ip_stride.txt:cpu0->cpu0_L2C PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+results/jll3_ip_stride.txt:cpu0->cpu0_L2C AVERAGE MISS LATENCY: 193 cycles
+results/jll3_no.txt:CPU 0 cumulative IPC: 0.09292 instructions: 30000004 cycles: 322851411
+results/jll3_no.txt:CPU 0 Branch Prediction Accuracy: 100% MPKI: 0.0002 Average ROB Occupancy at Mispredict: 307.7
+results/jll3_no.txt:cpu0->LLC TOTAL        ACCESS:    2987811 HIT:     270173 MISS:    2717638 MISS_MERGE:          0
+results/jll3_no.txt:cpu0->LLC LOAD         ACCESS:    2985746 HIT:     269938 MISS:    2715808 MISS_MERGE:          0
+results/jll3_no.txt:cpu0->LLC RFO          ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/jll3_no.txt:cpu0->LLC PREFETCH     ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/jll3_no.txt:cpu0->LLC WRITE        ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/jll3_no.txt:cpu0->LLC TRANSLATION  ACCESS:       2065 HIT:        235 MISS:       1830 MISS_MERGE:          0
+results/jll3_no.txt:cpu0->LLC PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+results/jll3_no.txt:cpu0->LLC AVERAGE MISS LATENCY: 194.7 cycles
+results/jll3_no.txt:cpu0->cpu0_L1D TOTAL        ACCESS:    8202274 HIT:    2022440 MISS:    6179834 MISS_MERGE:    2382342
+results/jll3_no.txt:cpu0->cpu0_L1D LOAD         ACCESS:    5454545 HIT:      11116 MISS:    5443429 MISS_MERGE:    2381583
+results/jll3_no.txt:cpu0->cpu0_L2C TOTAL        ACCESS:    3797492 HIT:     809682 MISS:    2987810 MISS_MERGE:          0
+results/jll3_no.txt:cpu0->cpu0_L2C LOAD         ACCESS:    3061846 HIT:      76101 MISS:    2985745 MISS_MERGE:          0
+results/jll3_no.txt:cpu0->cpu0_L2C RFO          ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/jll3_no.txt:cpu0->cpu0_L2C PREFETCH     ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/jll3_no.txt:cpu0->cpu0_L2C WRITE        ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/jll3_no.txt:cpu0->cpu0_L2C TRANSLATION  ACCESS:     735646 HIT:     733581 MISS:       2065 MISS_MERGE:          0
+results/jll3_no.txt:cpu0->cpu0_L2C PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+results/jll3_no.txt:cpu0->cpu0_L2C AVERAGE MISS LATENCY: 193 cycles
+results/jll3_spp_dev.txt:CPU 0 cumulative IPC: 0.09066 instructions: 30000004 cycles: 330901965
+results/jll3_spp_dev.txt:CPU 0 Branch Prediction Accuracy: 100% MPKI: 0.0002 Average ROB Occupancy at Mispredict: 307.7
+results/jll3_spp_dev.txt:cpu0->LLC TOTAL        ACCESS:    4963797 HIT:     537995 MISS:    4425802 MISS_MERGE:          1
+results/jll3_spp_dev.txt:cpu0->LLC LOAD         ACCESS:    2985810 HIT:     330327 MISS:    2655483 MISS_MERGE:          1
+results/jll3_spp_dev.txt:cpu0->LLC RFO          ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/jll3_spp_dev.txt:cpu0->LLC PREFETCH     ACCESS:    1975780 HIT:     207516 MISS:    1768264 MISS_MERGE:          0
+results/jll3_spp_dev.txt:cpu0->LLC WRITE        ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/jll3_spp_dev.txt:cpu0->LLC TRANSLATION  ACCESS:       2207 HIT:        152 MISS:       2055 MISS_MERGE:          0
+results/jll3_spp_dev.txt:cpu0->LLC PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+results/jll3_spp_dev.txt:cpu0->LLC AVERAGE MISS LATENCY: 204 cycles
+results/jll3_spp_dev.txt:cpu0->cpu0_L1D TOTAL        ACCESS:    8202208 HIT:    2022435 MISS:    6179773 MISS_MERGE:    2382357
+results/jll3_spp_dev.txt:cpu0->cpu0_L1D LOAD         ACCESS:    5454545 HIT:      11105 MISS:    5443440 MISS_MERGE:    2381590
+results/jll3_spp_dev.txt:cpu0->cpu0_L2C TOTAL        ACCESS:    6543319 HIT:     905290 MISS:    5638029 MISS_MERGE:     674233
+results/jll3_spp_dev.txt:cpu0->cpu0_L2C LOAD         ACCESS:    3061850 HIT:      76041 MISS:    2985809 MISS_MERGE:          0
+results/jll3_spp_dev.txt:cpu0->cpu0_L2C RFO          ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/jll3_spp_dev.txt:cpu0->cpu0_L2C PREFETCH     ACCESS:    2745903 HIT:      95890 MISS:    2650013 MISS_MERGE:     674233
+results/jll3_spp_dev.txt:cpu0->cpu0_L2C WRITE        ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/jll3_spp_dev.txt:cpu0->cpu0_L2C TRANSLATION  ACCESS:     735566 HIT:     733359 MISS:       2207 MISS_MERGE:          0
+results/jll3_spp_dev.txt:cpu0->cpu0_L2C PREFETCH REQUESTED:    2745903 ISSUED:    2745903 USEFUL:         27 USELESS:        633
+results/jll3_spp_dev.txt:cpu0->cpu0_L2C AVERAGE MISS LATENCY: 197.3 cycles
+results/pll_ip_stride.txt:CPU 0 cumulative IPC: 0.2661 instructions: 30000000 cycles: 112740463
+results/pll_ip_stride.txt:CPU 0 Branch Prediction Accuracy: 92.06% MPKI: 18.15 Average ROB Occupancy at Mispredict: 37.22
+results/pll_ip_stride.txt:cpu0->LLC TOTAL        ACCESS:     908680 HIT:     339500 MISS:     569180 MISS_MERGE:          0
+results/pll_ip_stride.txt:cpu0->LLC LOAD         ACCESS:     499681 HIT:      11955 MISS:     487726 MISS_MERGE:          0
+results/pll_ip_stride.txt:cpu0->LLC RFO          ACCESS:          2 HIT:          0 MISS:          2 MISS_MERGE:          0
+results/pll_ip_stride.txt:cpu0->LLC PREFETCH     ACCESS:      77667 HIT:        884 MISS:      76783 MISS_MERGE:          0
+results/pll_ip_stride.txt:cpu0->LLC WRITE        ACCESS:     301864 HIT:     301860 MISS:          4 MISS_MERGE:          0
+results/pll_ip_stride.txt:cpu0->LLC TRANSLATION  ACCESS:      29466 HIT:      24801 MISS:       4665 MISS_MERGE:          0
+results/pll_ip_stride.txt:cpu0->LLC PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+results/pll_ip_stride.txt:cpu0->LLC AVERAGE MISS LATENCY: 204.1 cycles
+results/pll_ip_stride.txt:cpu0->cpu0_L1D TOTAL        ACCESS:   11956465 HIT:   10854909 MISS:    1101556 MISS_MERGE:     398440
+results/pll_ip_stride.txt:cpu0->cpu0_L1D LOAD         ACCESS:    7386474 HIT:    6407571 MISS:     978903 MISS_MERGE:     398067
+results/pll_ip_stride.txt:cpu0->cpu0_L2C TOTAL        ACCESS:    1223037 HIT:     612757 MISS:     610280 MISS_MERGE:       3461
+results/pll_ip_stride.txt:cpu0->cpu0_L2C LOAD         ACCESS:     580837 HIT:      79013 MISS:     501824 MISS_MERGE:       2142
+results/pll_ip_stride.txt:cpu0->cpu0_L2C RFO          ACCESS:        331 HIT:        329 MISS:          2 MISS_MERGE:          0
+results/pll_ip_stride.txt:cpu0->cpu0_L2C PREFETCH     ACCESS:     212513 HIT:     133527 MISS:      78986 MISS_MERGE:       1319
+results/pll_ip_stride.txt:cpu0->cpu0_L2C WRITE        ACCESS:     307407 HIT:     307405 MISS:          2 MISS_MERGE:          0
+results/pll_ip_stride.txt:cpu0->cpu0_L2C TRANSLATION  ACCESS:     121949 HIT:      92483 MISS:      29466 MISS_MERGE:          0
+results/pll_ip_stride.txt:cpu0->cpu0_L2C PREFETCH REQUESTED:     212513 ISSUED:     212513 USEFUL:      77651 USELESS:         16
+results/pll_ip_stride.txt:cpu0->cpu0_L2C AVERAGE MISS LATENCY: 206 cycles
+results/pll_no.txt:CPU 0 cumulative IPC: 0.2319 instructions: 30000002 cycles: 129391377
+results/pll_no.txt:CPU 0 Branch Prediction Accuracy: 92.06% MPKI: 18.15 Average ROB Occupancy at Mispredict: 37.17
+results/pll_no.txt:cpu0->LLC TOTAL        ACCESS:     908650 HIT:     339480 MISS:     569170 MISS_MERGE:          0
+results/pll_no.txt:cpu0->LLC LOAD         ACCESS:     577338 HIT:      12836 MISS:     564502 MISS_MERGE:          0
+results/pll_no.txt:cpu0->LLC RFO          ACCESS:          2 HIT:          0 MISS:          2 MISS_MERGE:          0
+results/pll_no.txt:cpu0->LLC PREFETCH     ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/pll_no.txt:cpu0->LLC WRITE        ACCESS:     301867 HIT:     301863 MISS:          4 MISS_MERGE:          0
+results/pll_no.txt:cpu0->LLC TRANSLATION  ACCESS:      29443 HIT:      24781 MISS:       4662 MISS_MERGE:          0
+results/pll_no.txt:cpu0->LLC PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+results/pll_no.txt:cpu0->LLC AVERAGE MISS LATENCY: 204.1 cycles
+results/pll_no.txt:cpu0->cpu0_L1D TOTAL        ACCESS:   11954790 HIT:   10853228 MISS:    1101562 MISS_MERGE:     398445
+results/pll_no.txt:cpu0->cpu0_L1D LOAD         ACCESS:    7384798 HIT:    6405890 MISS:     978908 MISS_MERGE:     398072
+results/pll_no.txt:cpu0->cpu0_L2C TOTAL        ACCESS:    1010529 HIT:     403744 MISS:     606785 MISS_MERGE:          0
+results/pll_no.txt:cpu0->cpu0_L2C LOAD         ACCESS:     580839 HIT:       3501 MISS:     577338 MISS_MERGE:          0
+results/pll_no.txt:cpu0->cpu0_L2C RFO          ACCESS:        331 HIT:        329 MISS:          2 MISS_MERGE:          0
+results/pll_no.txt:cpu0->cpu0_L2C PREFETCH     ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/pll_no.txt:cpu0->cpu0_L2C WRITE        ACCESS:     307409 HIT:     307407 MISS:          2 MISS_MERGE:          0
+results/pll_no.txt:cpu0->cpu0_L2C TRANSLATION  ACCESS:     121950 HIT:      92507 MISS:      29443 MISS_MERGE:          0
+results/pll_no.txt:cpu0->cpu0_L2C PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+results/pll_no.txt:cpu0->cpu0_L2C AVERAGE MISS LATENCY: 207.4 cycles
+results/pll_spp_dev.txt:CPU 0 cumulative IPC: 0.4029 instructions: 30000000 cycles: 74455142
+results/pll_spp_dev.txt:CPU 0 Branch Prediction Accuracy: 92.06% MPKI: 18.15 Average ROB Occupancy at Mispredict: 38.78
+results/pll_spp_dev.txt:cpu0->LLC TOTAL        ACCESS:    3329356 HIT:    1585275 MISS:    1744081 MISS_MERGE:    1119587
+results/pll_spp_dev.txt:cpu0->LLC LOAD         ACCESS:     328477 HIT:      99905 MISS:     228572 MISS_MERGE:       4023
+results/pll_spp_dev.txt:cpu0->LLC RFO          ACCESS:          2 HIT:          0 MISS:          2 MISS_MERGE:          0
+results/pll_spp_dev.txt:cpu0->LLC PREFETCH     ACCESS:    2668754 HIT:    1159187 MISS:    1509567 MISS_MERGE:    1115564
+results/pll_spp_dev.txt:cpu0->LLC WRITE        ACCESS:     301840 HIT:     301811 MISS:         29 MISS_MERGE:          0
+results/pll_spp_dev.txt:cpu0->LLC TRANSLATION  ACCESS:      30283 HIT:      24372 MISS:       5911 MISS_MERGE:          0
+results/pll_spp_dev.txt:cpu0->LLC PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+results/pll_spp_dev.txt:cpu0->LLC AVERAGE MISS LATENCY: 201.2 cycles
+results/pll_spp_dev.txt:cpu0->cpu0_L1D TOTAL        ACCESS:   11878347 HIT:   10778107 MISS:    1100240 MISS_MERGE:     397127
+results/pll_spp_dev.txt:cpu0->cpu0_L1D LOAD         ACCESS:    7308356 HIT:    6330769 MISS:     977587 MISS_MERGE:     396754
+results/pll_spp_dev.txt:cpu0->cpu0_L2C TOTAL        ACCESS:    3732339 HIT:     610391 MISS:    3121948 MISS_MERGE:      94430
+results/pll_spp_dev.txt:cpu0->cpu0_L2C LOAD         ACCESS:     580836 HIT:     203232 MISS:     377604 MISS_MERGE:      49127
+results/pll_spp_dev.txt:cpu0->cpu0_L2C RFO          ACCESS:        331 HIT:        329 MISS:          2 MISS_MERGE:          0
+results/pll_spp_dev.txt:cpu0->cpu0_L2C PREFETCH     ACCESS:    2721818 HIT:       7761 MISS:    2714057 MISS_MERGE:      45303
+results/pll_spp_dev.txt:cpu0->cpu0_L2C WRITE        ACCESS:     307405 HIT:     307403 MISS:          2 MISS_MERGE:          0
+results/pll_spp_dev.txt:cpu0->cpu0_L2C TRANSLATION  ACCESS:     121949 HIT:      91666 MISS:      30283 MISS_MERGE:          0
+results/pll_spp_dev.txt:cpu0->cpu0_L2C PREFETCH REQUESTED:    3452269 ISSUED:    2721818 USEFUL:     248897 USELESS:       8649
+results/pll_spp_dev.txt:cpu0->cpu0_L2C AVERAGE MISS LATENCY: 134 cycles
+results/pll2_ip_stride.txt:CPU 0 cumulative IPC: 1.153 instructions: 30000002 cycles: 26015234
+results/pll2_ip_stride.txt:CPU 0 Branch Prediction Accuracy: 99.19% MPKI: 1.502 Average ROB Occupancy at Mispredict: 249.1
+results/pll2_ip_stride.txt:cpu0->LLC TOTAL        ACCESS:      99644 HIT:      44232 MISS:      55412 MISS_MERGE:          0
+results/pll2_ip_stride.txt:cpu0->LLC LOAD         ACCESS:      56040 HIT:       1252 MISS:      54788 MISS_MERGE:          0
+results/pll2_ip_stride.txt:cpu0->LLC RFO          ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/pll2_ip_stride.txt:cpu0->LLC PREFETCH     ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/pll2_ip_stride.txt:cpu0->LLC WRITE        ACCESS:      40860 HIT:      40860 MISS:          0 MISS_MERGE:          0
+results/pll2_ip_stride.txt:cpu0->LLC TRANSLATION  ACCESS:       2744 HIT:       2120 MISS:        624 MISS_MERGE:          0
+results/pll2_ip_stride.txt:cpu0->LLC PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+results/pll2_ip_stride.txt:cpu0->LLC AVERAGE MISS LATENCY: 176.7 cycles
+results/pll2_ip_stride.txt:cpu0->cpu0_L1D TOTAL        ACCESS:   10037797 HIT:    9946488 MISS:      91309 MISS_MERGE:      11100
+results/pll2_ip_stride.txt:cpu0->cpu0_L1D LOAD         ACCESS:    5252302 HIT:    5185576 MISS:      66726 MISS_MERGE:      10307
+results/pll2_ip_stride.txt:cpu0->cpu0_L2C TOTAL        ACCESS:     121560 HIT:      62774 MISS:      58786 MISS_MERGE:          0
+results/pll2_ip_stride.txt:cpu0->cpu0_L2C LOAD         ACCESS:      56419 HIT:        379 MISS:      56040 MISS_MERGE:          0
+results/pll2_ip_stride.txt:cpu0->cpu0_L2C RFO          ACCESS:        345 HIT:        345 MISS:          0 MISS_MERGE:          0
+results/pll2_ip_stride.txt:cpu0->cpu0_L2C PREFETCH     ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/pll2_ip_stride.txt:cpu0->cpu0_L2C WRITE        ACCESS:      41351 HIT:      41349 MISS:          2 MISS_MERGE:          0
+results/pll2_ip_stride.txt:cpu0->cpu0_L2C TRANSLATION  ACCESS:      23445 HIT:      20701 MISS:       2744 MISS_MERGE:          0
+results/pll2_ip_stride.txt:cpu0->cpu0_L2C PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+results/pll2_ip_stride.txt:cpu0->cpu0_L2C AVERAGE MISS LATENCY: 182.5 cycles
+results/pll2_no.txt:CPU 0 cumulative IPC: 1.153 instructions: 30000002 cycles: 26015234
+results/pll2_no.txt:CPU 0 Branch Prediction Accuracy: 99.19% MPKI: 1.502 Average ROB Occupancy at Mispredict: 249.1
+results/pll2_no.txt:cpu0->LLC TOTAL        ACCESS:      99644 HIT:      44232 MISS:      55412 MISS_MERGE:          0
+results/pll2_no.txt:cpu0->LLC LOAD         ACCESS:      56040 HIT:       1252 MISS:      54788 MISS_MERGE:          0
+results/pll2_no.txt:cpu0->LLC RFO          ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/pll2_no.txt:cpu0->LLC PREFETCH     ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/pll2_no.txt:cpu0->LLC WRITE        ACCESS:      40860 HIT:      40860 MISS:          0 MISS_MERGE:          0
+results/pll2_no.txt:cpu0->LLC TRANSLATION  ACCESS:       2744 HIT:       2120 MISS:        624 MISS_MERGE:          0
+results/pll2_no.txt:cpu0->LLC PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+results/pll2_no.txt:cpu0->LLC AVERAGE MISS LATENCY: 176.7 cycles
+results/pll2_no.txt:cpu0->cpu0_L1D TOTAL        ACCESS:   10037797 HIT:    9946488 MISS:      91309 MISS_MERGE:      11100
+results/pll2_no.txt:cpu0->cpu0_L1D LOAD         ACCESS:    5252302 HIT:    5185576 MISS:      66726 MISS_MERGE:      10307
+results/pll2_no.txt:cpu0->cpu0_L2C TOTAL        ACCESS:     121560 HIT:      62774 MISS:      58786 MISS_MERGE:          0
+results/pll2_no.txt:cpu0->cpu0_L2C LOAD         ACCESS:      56419 HIT:        379 MISS:      56040 MISS_MERGE:          0
+results/pll2_no.txt:cpu0->cpu0_L2C RFO          ACCESS:        345 HIT:        345 MISS:          0 MISS_MERGE:          0
+results/pll2_no.txt:cpu0->cpu0_L2C PREFETCH     ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/pll2_no.txt:cpu0->cpu0_L2C WRITE        ACCESS:      41351 HIT:      41349 MISS:          2 MISS_MERGE:          0
+results/pll2_no.txt:cpu0->cpu0_L2C TRANSLATION  ACCESS:      23445 HIT:      20701 MISS:       2744 MISS_MERGE:          0
+results/pll2_no.txt:cpu0->cpu0_L2C PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+results/pll2_no.txt:cpu0->cpu0_L2C AVERAGE MISS LATENCY: 182.5 cycles
+results/pll2_spp_dev.txt:CPU 0 cumulative IPC: 1.156 instructions: 30000002 cycles: 25954434
+results/pll2_spp_dev.txt:CPU 0 Branch Prediction Accuracy: 99.19% MPKI: 1.502 Average ROB Occupancy at Mispredict: 249.1
+results/pll2_spp_dev.txt:cpu0->LLC TOTAL        ACCESS:     101266 HIT:      44710 MISS:      56556 MISS_MERGE:         87
+results/pll2_spp_dev.txt:cpu0->LLC LOAD         ACCESS:      55948 HIT:       1677 MISS:      54271 MISS_MERGE:         87
+results/pll2_spp_dev.txt:cpu0->LLC RFO          ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/pll2_spp_dev.txt:cpu0->LLC PREFETCH     ACCESS:       1689 HIT:         46 MISS:       1643 MISS_MERGE:          0
+results/pll2_spp_dev.txt:cpu0->LLC WRITE        ACCESS:      40869 HIT:      40869 MISS:          0 MISS_MERGE:          0
+results/pll2_spp_dev.txt:cpu0->LLC TRANSLATION  ACCESS:       2760 HIT:       2118 MISS:        642 MISS_MERGE:          0
+results/pll2_spp_dev.txt:cpu0->LLC PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+results/pll2_spp_dev.txt:cpu0->LLC AVERAGE MISS LATENCY: 177.2 cycles
+results/pll2_spp_dev.txt:cpu0->cpu0_L1D TOTAL        ACCESS:   10037797 HIT:    9946488 MISS:      91309 MISS_MERGE:      11100
+results/pll2_spp_dev.txt:cpu0->cpu0_L1D LOAD         ACCESS:    5252302 HIT:    5185576 MISS:      66726 MISS_MERGE:      10307
+results/pll2_spp_dev.txt:cpu0->cpu0_L2C TOTAL        ACCESS:     137972 HIT:      63006 MISS:      74966 MISS_MERGE:      14567
+results/pll2_spp_dev.txt:cpu0->cpu0_L2C LOAD         ACCESS:      56419 HIT:        462 MISS:      55957 MISS_MERGE:          9
+results/pll2_spp_dev.txt:cpu0->cpu0_L2C RFO          ACCESS:        345 HIT:        345 MISS:          0 MISS_MERGE:          0
+results/pll2_spp_dev.txt:cpu0->cpu0_L2C PREFETCH     ACCESS:      16412 HIT:        165 MISS:      16247 MISS_MERGE:      14558
+results/pll2_spp_dev.txt:cpu0->cpu0_L2C WRITE        ACCESS:      41351 HIT:      41349 MISS:          2 MISS_MERGE:          0
+results/pll2_spp_dev.txt:cpu0->cpu0_L2C TRANSLATION  ACCESS:      23445 HIT:      20685 MISS:       2760 MISS_MERGE:          0
+results/pll2_spp_dev.txt:cpu0->cpu0_L2C PREFETCH REQUESTED:      16412 ISSUED:      16412 USEFUL:         93 USELESS:        193
+results/pll2_spp_dev.txt:cpu0->cpu0_L2C AVERAGE MISS LATENCY: 181.7 cycles
+results/pmm_ip_stride.txt:CPU 0 cumulative IPC: 1.461 instructions: 30000000 cycles: 20527579
+results/pmm_ip_stride.txt:CPU 0 Branch Prediction Accuracy: 94.86% MPKI: 9.113 Average ROB Occupancy at Mispredict: 64.82
+results/pmm_ip_stride.txt:cpu0->LLC TOTAL        ACCESS:      13174 HIT:       4495 MISS:       8679 MISS_MERGE:          0
+results/pmm_ip_stride.txt:cpu0->LLC LOAD         ACCESS:       8719 HIT:         50 MISS:       8669 MISS_MERGE:          0
+results/pmm_ip_stride.txt:cpu0->LLC RFO          ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/pmm_ip_stride.txt:cpu0->LLC PREFETCH     ACCESS:         19 HIT:          9 MISS:         10 MISS_MERGE:          0
+results/pmm_ip_stride.txt:cpu0->LLC WRITE        ACCESS:       4400 HIT:       4400 MISS:          0 MISS_MERGE:          0
+results/pmm_ip_stride.txt:cpu0->LLC TRANSLATION  ACCESS:         36 HIT:         36 MISS:          0 MISS_MERGE:          0
+results/pmm_ip_stride.txt:cpu0->LLC PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+results/pmm_ip_stride.txt:cpu0->LLC AVERAGE MISS LATENCY: 169.8 cycles
+results/pmm_ip_stride.txt:cpu0->cpu0_L1D TOTAL        ACCESS:   11556764 HIT:   11478201 MISS:      78563 MISS_MERGE:      14547
+results/pmm_ip_stride.txt:cpu0->cpu0_L1D LOAD         ACCESS:    7242982 HIT:    7164942 MISS:      78040 MISS_MERGE:      14295
+results/pmm_ip_stride.txt:cpu0->cpu0_L2C TOTAL        ACCESS:     128149 HIT:     119375 MISS:       8774 MISS_MERGE:          0
+results/pmm_ip_stride.txt:cpu0->cpu0_L2C LOAD         ACCESS:      63745 HIT:      55026 MISS:       8719 MISS_MERGE:          0
+results/pmm_ip_stride.txt:cpu0->cpu0_L2C RFO          ACCESS:        152 HIT:        152 MISS:          0 MISS_MERGE:          0
+results/pmm_ip_stride.txt:cpu0->cpu0_L2C PREFETCH     ACCESS:      28827 HIT:      28808 MISS:         19 MISS_MERGE:          0
+results/pmm_ip_stride.txt:cpu0->cpu0_L2C WRITE        ACCESS:      35306 HIT:      35306 MISS:          0 MISS_MERGE:          0
+results/pmm_ip_stride.txt:cpu0->cpu0_L2C TRANSLATION  ACCESS:        119 HIT:         83 MISS:         36 MISS_MERGE:          0
+results/pmm_ip_stride.txt:cpu0->cpu0_L2C PREFETCH REQUESTED:      28827 ISSUED:      28827 USEFUL:         16 USELESS:          0
+results/pmm_ip_stride.txt:cpu0->cpu0_L2C AVERAGE MISS LATENCY: 184.1 cycles
+results/pmm_no.txt:CPU 0 cumulative IPC: 1.461 instructions: 30000000 cycles: 20530289
+results/pmm_no.txt:CPU 0 Branch Prediction Accuracy: 94.86% MPKI: 9.113 Average ROB Occupancy at Mispredict: 64.82
+results/pmm_no.txt:cpu0->LLC TOTAL        ACCESS:      13166 HIT:       4490 MISS:       8676 MISS_MERGE:          0
+results/pmm_no.txt:cpu0->LLC LOAD         ACCESS:       8733 HIT:         57 MISS:       8676 MISS_MERGE:          0
+results/pmm_no.txt:cpu0->LLC RFO          ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/pmm_no.txt:cpu0->LLC PREFETCH     ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/pmm_no.txt:cpu0->LLC WRITE        ACCESS:       4397 HIT:       4397 MISS:          0 MISS_MERGE:          0
+results/pmm_no.txt:cpu0->LLC TRANSLATION  ACCESS:         36 HIT:         36 MISS:          0 MISS_MERGE:          0
+results/pmm_no.txt:cpu0->LLC PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+results/pmm_no.txt:cpu0->LLC AVERAGE MISS LATENCY: 170 cycles
+results/pmm_no.txt:cpu0->cpu0_L1D TOTAL        ACCESS:   11556764 HIT:   11478201 MISS:      78563 MISS_MERGE:      14547
+results/pmm_no.txt:cpu0->cpu0_L1D LOAD         ACCESS:    7242982 HIT:    7164942 MISS:      78040 MISS_MERGE:      14295
+results/pmm_no.txt:cpu0->cpu0_L2C TOTAL        ACCESS:      99322 HIT:      90553 MISS:       8769 MISS_MERGE:          0
+results/pmm_no.txt:cpu0->cpu0_L2C LOAD         ACCESS:      63745 HIT:      55012 MISS:       8733 MISS_MERGE:          0
+results/pmm_no.txt:cpu0->cpu0_L2C RFO          ACCESS:        152 HIT:        152 MISS:          0 MISS_MERGE:          0
+results/pmm_no.txt:cpu0->cpu0_L2C PREFETCH     ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/pmm_no.txt:cpu0->cpu0_L2C WRITE        ACCESS:      35306 HIT:      35306 MISS:          0 MISS_MERGE:          0
+results/pmm_no.txt:cpu0->cpu0_L2C TRANSLATION  ACCESS:        119 HIT:         83 MISS:         36 MISS_MERGE:          0
+results/pmm_no.txt:cpu0->cpu0_L2C PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+results/pmm_no.txt:cpu0->cpu0_L2C AVERAGE MISS LATENCY: 184.1 cycles
+results/pmm_spp_dev.txt:CPU 0 cumulative IPC: 1.559 instructions: 30000000 cycles: 19240290
+results/pmm_spp_dev.txt:CPU 0 Branch Prediction Accuracy: 94.86% MPKI: 9.113 Average ROB Occupancy at Mispredict: 64.46
+results/pmm_spp_dev.txt:cpu0->LLC TOTAL        ACCESS:      86051 HIT:      73940 MISS:      12111 MISS_MERGE:       2624
+results/pmm_spp_dev.txt:cpu0->LLC LOAD         ACCESS:       6264 HIT:       4820 MISS:       1444 MISS_MERGE:          2
+results/pmm_spp_dev.txt:cpu0->LLC RFO          ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+results/pmm_spp_dev.txt:cpu0->LLC PREFETCH     ACCESS:      75274 HIT:      64607 MISS:      10667 MISS_MERGE:       2622
+results/pmm_spp_dev.txt:cpu0->LLC WRITE        ACCESS:       4474 HIT:       4474 MISS:          0 MISS_MERGE:          0
+results/pmm_spp_dev.txt:cpu0->LLC TRANSLATION  ACCESS:         39 HIT:         39 MISS:          0 MISS_MERGE:          0
+results/pmm_spp_dev.txt:cpu0->LLC PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+results/pmm_spp_dev.txt:cpu0->LLC AVERAGE MISS LATENCY: 157.3 cycles
+results/pmm_spp_dev.txt:cpu0->cpu0_L1D TOTAL        ACCESS:   11556764 HIT:   11478201 MISS:      78563 MISS_MERGE:      14547
+results/pmm_spp_dev.txt:cpu0->cpu0_L1D LOAD         ACCESS:    7242982 HIT:    7164942 MISS:      78040 MISS_MERGE:      14295
+results/pmm_spp_dev.txt:cpu0->cpu0_L2C TOTAL        ACCESS:     340574 HIT:     258908 MISS:      81666 MISS_MERGE:         89
+results/pmm_spp_dev.txt:cpu0->cpu0_L2C LOAD         ACCESS:      63745 HIT:      57416 MISS:       6329 MISS_MERGE:         65
+results/pmm_spp_dev.txt:cpu0->cpu0_L2C RFO          ACCESS:        152 HIT:        152 MISS:          0 MISS_MERGE:          0
+results/pmm_spp_dev.txt:cpu0->cpu0_L2C PREFETCH     ACCESS:     241252 HIT:     165954 MISS:      75298 MISS_MERGE:         24
+results/pmm_spp_dev.txt:cpu0->cpu0_L2C WRITE        ACCESS:      35306 HIT:      35306 MISS:          0 MISS_MERGE:          0
+results/pmm_spp_dev.txt:cpu0->cpu0_L2C TRANSLATION  ACCESS:        119 HIT:         80 MISS:         39 MISS_MERGE:          0
+results/pmm_spp_dev.txt:cpu0->cpu0_L2C PREFETCH REQUESTED:     241380 ISSUED:     241252 USEFUL:       2540 USELESS:         68
+results/pmm_spp_dev.txt:cpu0->cpu0_L2C AVERAGE MISS LATENCY: 50.82 cycles

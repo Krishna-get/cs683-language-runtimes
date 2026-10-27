@@ -1,0 +1,86 @@
+=== cmm
+cpu0->cpu0_DTLB TOTAL        ACCESS:    8566606 HIT:    5986010 MISS:    2580596 MISS_MERGE:     430252
+cpu0->cpu0_L1D TOTAL        ACCESS:    8566638 HIT:    4214517 MISS:    4352121 MISS_MERGE:      58951
+cpu0->cpu0_L1D LOAD         ACCESS:    8558257 HIT:    4213628 MISS:    4344629 MISS_MERGE:      51997
+cpu0->cpu0_L1D RFO          ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+cpu0->cpu0_L1D PREFETCH     ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+cpu0->cpu0_L1D WRITE        ACCESS:       8349 HIT:        873 MISS:       7476 MISS_MERGE:       6954
+cpu0->cpu0_L1D PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+cpu0->cpu0_L1I TOTAL        ACCESS:    3497825 HIT:    3497825 MISS:          0 MISS_MERGE:          0
+cpu0->cpu0_L1I LOAD         ACCESS:    3497825 HIT:    3497825 MISS:          0 MISS_MERGE:          0
+cpu0->cpu0_STLB TOTAL        ACCESS:    2150344 HIT:    2150328 MISS:         16 MISS_MERGE:          0
+=== cll
+cpu0->cpu0_DTLB TOTAL        ACCESS:    7499987 HIT:     232055 MISS:    7267932 MISS_MERGE:    3633961
+cpu0->cpu0_L1D TOTAL        ACCESS:    9388839 HIT:    1392264 MISS:    7996575 MISS_MERGE:    3735880
+cpu0->cpu0_L1D LOAD         ACCESS:    7499987 HIT:      28226 MISS:    7471761 MISS_MERGE:    3735880
+cpu0->cpu0_L1D RFO          ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+cpu0->cpu0_L1D PREFETCH     ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+cpu0->cpu0_L1D WRITE        ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+cpu0->cpu0_L1D PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+cpu0->cpu0_L1I TOTAL        ACCESS:   14996563 HIT:   14996563 MISS:          0 MISS_MERGE:          0
+cpu0->cpu0_L1I LOAD         ACCESS:   14996563 HIT:   14996563 MISS:          0 MISS_MERGE:          0
+cpu0->cpu0_STLB TOTAL        ACCESS:    3633971 HIT:    2689545 MISS:     944426 MISS_MERGE:          0
+=== pmm
+cpu0->cpu0_DTLB TOTAL        ACCESS:   11556526 HIT:   11436753 MISS:     119773 MISS_MERGE:      24079
+cpu0->cpu0_L1D TOTAL        ACCESS:   11556764 HIT:   11478201 MISS:      78563 MISS_MERGE:      14547
+cpu0->cpu0_L1D LOAD         ACCESS:    7242982 HIT:    7164942 MISS:      78040 MISS_MERGE:      14295
+cpu0->cpu0_L1D RFO          ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+cpu0->cpu0_L1D PREFETCH     ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+cpu0->cpu0_L1D WRITE        ACCESS:    4313544 HIT:    4313140 MISS:        404 MISS_MERGE:        252
+cpu0->cpu0_L1D PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+cpu0->cpu0_L1I TOTAL        ACCESS:    2655693 HIT:    2655693 MISS:          0 MISS_MERGE:          0
+cpu0->cpu0_L1I LOAD         ACCESS:    2655693 HIT:    2655693 MISS:          0 MISS_MERGE:          0
+cpu0->cpu0_STLB TOTAL        ACCESS:      95694 HIT:      95575 MISS:        119 MISS_MERGE:          0
+=== pll2
+cpu0->cpu0_DTLB TOTAL        ACCESS:    9967812 HIT:    9914964 MISS:      52848 MISS_MERGE:       3971
+cpu0->cpu0_L1D TOTAL        ACCESS:   10037797 HIT:    9946488 MISS:      91309 MISS_MERGE:      11100
+cpu0->cpu0_L1D LOAD         ACCESS:    5252302 HIT:    5185576 MISS:      66726 MISS_MERGE:      10307
+cpu0->cpu0_L1D RFO          ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+cpu0->cpu0_L1D PREFETCH     ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+cpu0->cpu0_L1D WRITE        ACCESS:    4715510 HIT:    4714372 MISS:       1138 MISS_MERGE:        793
+cpu0->cpu0_L1D PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+cpu0->cpu0_L1I TOTAL        ACCESS:    4869861 HIT:    4869861 MISS:          0 MISS_MERGE:          0
+cpu0->cpu0_L1I LOAD         ACCESS:    4869861 HIT:    4869861 MISS:          0 MISS_MERGE:          0
+cpu0->cpu0_STLB TOTAL        ACCESS:      48877 HIT:      13896 MISS:      34981 MISS_MERGE:          0
+=== jll3
+cpu0->cpu0_DTLB TOTAL        ACCESS:    5454541 HIT:     113686 MISS:    5340855 MISS_MERGE:    2665377
+cpu0->cpu0_L1D TOTAL        ACCESS:    8202274 HIT:    2022440 MISS:    6179834 MISS_MERGE:    2382342
+cpu0->cpu0_L1D LOAD         ACCESS:    5454545 HIT:      11116 MISS:    5443429 MISS_MERGE:    2381583
+cpu0->cpu0_L1D RFO          ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+cpu0->cpu0_L1D PREFETCH     ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+cpu0->cpu0_L1D WRITE        ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+cpu0->cpu0_L1D PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+cpu0->cpu0_L1I TOTAL        ACCESS:    5497737 HIT:    5497737 MISS:          0 MISS_MERGE:          0
+cpu0->cpu0_L1I LOAD         ACCESS:    5497737 HIT:    5497737 MISS:          0 MISS_MERGE:          0
+cpu0->cpu0_STLB TOTAL        ACCESS:    2675478 HIT:    1301615 MISS:    1373863 MISS_MERGE:          0
+=== java512_full_no
+CPU 0 Branch Prediction Accuracy: 99.69% MPKI: 0.3905 Average ROB Occupancy at Mispredict: 183.1
+cpu0->cpu0_DTLB TOTAL        ACCESS:   11991701 HIT:    9048257 MISS:    2943444 MISS_MERGE:    1424855
+cpu0->cpu0_L1D TOTAL        ACCESS:   11991722 HIT:    5360484 MISS:    6631238 MISS_MERGE:     477461
+cpu0->cpu0_L1D LOAD         ACCESS:   11985848 HIT:    5360415 MISS:    6625433 MISS_MERGE:     477461
+cpu0->cpu0_L1D RFO          ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+cpu0->cpu0_L1D PREFETCH     ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+cpu0->cpu0_L1D WRITE        ACCESS:       5852 HIT:         58 MISS:       5794 MISS_MERGE:          0
+cpu0->cpu0_L1D PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+cpu0->cpu0_L1I TOTAL        ACCESS:    5489241 HIT:    5489241 MISS:          0 MISS_MERGE:          0
+cpu0->cpu0_L1I LOAD         ACCESS:    5489241 HIT:    5489241 MISS:          0 MISS_MERGE:          0
+cpu0->cpu0_STLB TOTAL        ACCESS:    1518589 HIT:    1518578 MISS:         11 MISS_MERGE:          0
+=== java512b_full_no
+CPU 0 Branch Prediction Accuracy: 99.69% MPKI: 0.3905 Average ROB Occupancy at Mispredict: 183.1
+cpu0->cpu0_DTLB TOTAL        ACCESS:   11991764 HIT:    9052686 MISS:    2939078 MISS_MERGE:    1419555
+cpu0->cpu0_L1D TOTAL        ACCESS:   11991785 HIT:    5350084 MISS:    6641701 MISS_MERGE:     473324
+cpu0->cpu0_L1D LOAD         ACCESS:   11985911 HIT:    5350021 MISS:    6635890 MISS_MERGE:     473324
+cpu0->cpu0_L1D RFO          ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+cpu0->cpu0_L1D PREFETCH     ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+cpu0->cpu0_L1D WRITE        ACCESS:       5852 HIT:         52 MISS:       5800 MISS_MERGE:          0
+cpu0->cpu0_L1D PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+cpu0->cpu0_L1I TOTAL        ACCESS:    5490144 HIT:    5490144 MISS:          0 MISS_MERGE:          0
+cpu0->cpu0_L1I LOAD         ACCESS:    5490144 HIT:    5490144 MISS:          0 MISS_MERGE:          0
+cpu0->cpu0_STLB TOTAL        ACCESS:    1519522 HIT:    1519511 MISS:         11 MISS_MERGE:          0
+Python 3.12.3
+opcodes 140
+openjdk version "21.0.12.1" 2026-08-18
+gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+ChampSim 410cee62 Fri Sep 4 15:07:22 2026 -0700
+Pin: pin-3.31-98869-fa6f126a8
+Copyright 2002-2024 Intel Corporation.

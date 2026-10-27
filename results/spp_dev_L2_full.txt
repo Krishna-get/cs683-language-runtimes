@@ -1,0 +1,8 @@
+cpu0->cpu0_L2C TOTAL        ACCESS:    8271738 HIT:    8244468 MISS:      27270 MISS_MERGE:        284
+cpu0->cpu0_L2C LOAD         ACCESS:    4298774 HIT:    4297728 MISS:       1046 MISS_MERGE:        256
+cpu0->cpu0_L2C RFO          ACCESS:       1473 HIT:       1473 MISS:          0 MISS_MERGE:          0
+cpu0->cpu0_L2C PREFETCH     ACCESS:    3955234 HIT:    3929014 MISS:      26220 MISS_MERGE:         28
+cpu0->cpu0_L2C WRITE        ACCESS:      16225 HIT:      16225 MISS:          0 MISS_MERGE:          0
+cpu0->cpu0_L2C TRANSLATION  ACCESS:         32 HIT:         28 MISS:          4 MISS_MERGE:          0
+cpu0->cpu0_L2C PREFETCH REQUESTED:    9058700 ISSUED:    3955226 USEFUL:       1291 USELESS:          0
+cpu0->cpu0_L2C AVERAGE MISS LATENCY: 27.64 cycles

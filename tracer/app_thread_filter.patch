@@ -1,0 +1,71 @@
+--- /home/krishna/ChampSim/tracer/pin/champsim_tracer.cpp.orig	2026-10-24 20:37:17.542688717 +0000
++++ /home/krishna/ChampSim/tracer/pin/champsim_tracer.cpp	2026-10-25 07:40:05.783622234 +0000
+@@ -56,6 +56,9 @@
+ 
+ KNOB<UINT64> KnobTraceInstructions(KNOB_MODE_WRITEONCE, "pintool", "t", "1000000", "How many instructions to trace");
+ 
++// NEW: only this Pin thread id is traced and counted (Java app thread = 1, plain C/Python = 0)
++KNOB<UINT32> KnobAppThread(KNOB_MODE_WRITEONCE, "pintool", "app_thread", "1", "Pin thread id of the application thread to trace");
++
+ KNOB<std::string> KnobStartSymbol(KNOB_MODE_WRITEONCE, "pintool", "start_symbol", "",
+                                   "Symbol name to start tracing (e.g., 'main' or '_Z4testv'). If specified `-s` argument is ignored.");
+ 
+@@ -74,6 +77,7 @@
+             << "Specify the output trace file with -o" << std::endl
+             << "Specify the number of instructions to skip before tracing with -s" << std::endl
+             << "Specify the number of instructions to trace with -t" << std::endl
++            << "Specify the Pin thread id to trace with -app_thread (default 1)" << std::endl
+             << std::endl;
+ 
+   std::cerr << KNOB_BASE::StringKnobSummary() << std::endl;
+@@ -87,12 +91,18 @@
+ 
+ void ResetCurrentInstruction(VOID* ip)
+ {
++  if (PIN_ThreadId() != KnobAppThread.Value()) // CHANGED
++    return;
+   curr_instr = {};
+   curr_instr.ip = (unsigned long long int)ip;
+ }
+ 
+ BOOL ShouldWrite()
+ {
++  // CHANGED: must be first, so other threads do not touch the skip counter
++  if (PIN_ThreadId() != KnobAppThread.Value())
++    return false;
++
+   // Enable tracing when skip limit reached if not symbol-based tracing.
+   // If using symbol-based tracing, `tracingActive` is set at the symbol instead.
+   if (KnobStartSymbol.Value().empty() && skippedInstrCount > KnobSkipInstructions.Value()) {
+@@ -125,6 +135,8 @@
+ 
+ void BranchOrNot(UINT32 taken)
+ {
++  if (PIN_ThreadId() != KnobAppThread.Value()) // CHANGED
++    return;
+   curr_instr.is_branch = 1;
+   curr_instr.branch_taken = taken;
+ }
+@@ -132,6 +144,8 @@
+ template <typename T>
+ void WriteToSet(T* begin, T* end, UINT32 r)
+ {
++  if (PIN_ThreadId() != KnobAppThread.Value()) // CHANGED
++    return;
+   auto set_end = std::find(begin, end, 0);
+   auto found_reg = std::find(begin, set_end, r); // check to see if this register is already in the list
+   *found_reg = r;
+@@ -258,7 +272,12 @@
+  * @param[in]   v               value specified by the tool in the
+  *                              PIN_AddFiniFunction function call
+  */
+-VOID Fini(INT32 code, VOID* v) { outfile.close(); }
++VOID Fini(INT32 code, VOID* v)
++{
++  std::cerr << "[TRACER] app-thread instructions seen: " << (skippedInstrCount + tracedCumulativeInstructions)
++            << "  skipped: " << skippedInstrCount << "  traced: " << tracedCumulativeInstructions << std::endl;
++  outfile.close();
++}
+ 
+ /*!
+  * The main procedure of the tool.

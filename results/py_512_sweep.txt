@@ -1,0 +1,36 @@
+=== Python 512: no
+CPU 0 cumulative IPC: 1.564 instructions: 30000001 cycles: 19186185
+CPU 0 Branch Prediction Accuracy: 95.85% MPKI: 7.42 Average ROB Occupancy at Mispredict: 80.13
+cpu0->LLC TOTAL        ACCESS:      13726 HIT:       4785 MISS:       8941 MISS_MERGE:          0
+cpu0->cpu0_L1D TOTAL        ACCESS:   11027951 HIT:   10948410 MISS:      79541 MISS_MERGE:      13975
+cpu0->cpu0_L1D LOAD         ACCESS:    6797369 HIT:    6718246 MISS:      79123 MISS_MERGE:      13770
+cpu0->cpu0_L1D WRITE        ACCESS:    4230302 HIT:    4230023 MISS:        279 MISS_MERGE:        205
+cpu0->cpu0_L1I TOTAL        ACCESS:    2356580 HIT:    2356580 MISS:          0 MISS_MERGE:          0
+cpu0->cpu0_L2C TOTAL        ACCESS:     101652 HIT:      92633 MISS:       9019 MISS_MERGE:          0
+cpu0->cpu0_L2C PREFETCH     ACCESS:          0 HIT:          0 MISS:          0 MISS_MERGE:          0
+cpu0->cpu0_L2C PREFETCH REQUESTED:          0 ISSUED:          0 USEFUL:          0 USELESS:          0
+cpu0->cpu0_L2C AVERAGE MISS LATENCY: 169.4 cycles
+=== Python 512: ip_stride
+CPU 0 cumulative IPC: 1.564 instructions: 30000001 cycles: 19186185
+CPU 0 Branch Prediction Accuracy: 95.85% MPKI: 7.42 Average ROB Occupancy at Mispredict: 80.13
+cpu0->LLC TOTAL        ACCESS:      13727 HIT:       4786 MISS:       8941 MISS_MERGE:          0
+cpu0->cpu0_L1D TOTAL        ACCESS:   11027948 HIT:   10948407 MISS:      79541 MISS_MERGE:      13975
+cpu0->cpu0_L1D LOAD         ACCESS:    6797366 HIT:    6718243 MISS:      79123 MISS_MERGE:      13770
+cpu0->cpu0_L1D WRITE        ACCESS:    4230302 HIT:    4230023 MISS:        279 MISS_MERGE:        205
+cpu0->cpu0_L1I TOTAL        ACCESS:    2356580 HIT:    2356580 MISS:          0 MISS_MERGE:          0
+cpu0->cpu0_L2C TOTAL        ACCESS:     128811 HIT:     119792 MISS:       9019 MISS_MERGE:          0
+cpu0->cpu0_L2C PREFETCH     ACCESS:      27159 HIT:      27156 MISS:          3 MISS_MERGE:          0
+cpu0->cpu0_L2C PREFETCH REQUESTED:      27159 ISSUED:      27159 USEFUL:          3 USELESS:          0
+cpu0->cpu0_L2C AVERAGE MISS LATENCY: 169.4 cycles
+=== Python 512: spp_dev
+CPU 0 cumulative IPC: 1.665 instructions: 30000001 cycles: 18022324
+CPU 0 Branch Prediction Accuracy: 95.85% MPKI: 7.419 Average ROB Occupancy at Mispredict: 79.96
+cpu0->LLC TOTAL        ACCESS:      58471 HIT:      46326 MISS:      12145 MISS_MERGE:       1306
+cpu0->cpu0_L1D TOTAL        ACCESS:   11030102 HIT:   10950560 MISS:      79542 MISS_MERGE:      13976
+cpu0->cpu0_L1D LOAD         ACCESS:    6799520 HIT:    6720396 MISS:      79124 MISS_MERGE:      13771
+cpu0->cpu0_L1D WRITE        ACCESS:    4230302 HIT:    4230023 MISS:        279 MISS_MERGE:        205
+cpu0->cpu0_L1I TOTAL        ACCESS:    2314773 HIT:    2314773 MISS:          0 MISS_MERGE:          0
+cpu0->cpu0_L2C TOTAL        ACCESS:     320540 HIT:     266713 MISS:      53827 MISS_MERGE:        123
+cpu0->cpu0_L2C PREFETCH     ACCESS:     218889 HIT:     172964 MISS:      45925 MISS_MERGE:         41
+cpu0->cpu0_L2C PREFETCH REQUESTED:     218935 ISSUED:     218889 USEFUL:       1236 USELESS:         32
+cpu0->cpu0_L2C AVERAGE MISS LATENCY: 44.85 cycles

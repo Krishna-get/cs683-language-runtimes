@@ -1,0 +1,9 @@
+traces/
+bin/
+pin.log
+*.champsimtrace
+*.champsimtrace.xz
+*.class
+*.o
+__pycache__/
+nohup.out

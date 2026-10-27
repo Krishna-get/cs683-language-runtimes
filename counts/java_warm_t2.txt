@@ -1,0 +1,14 @@
+Count[2] = 1121842
+Count[0] = 5347430
+Count[1] = 12696775213
+Count[4] = 112420
+Count[5] = 75297
+Count[6] = 39999
+Count[7] = 12888
+Count[8] = 131416
+Count[9] = 59611613
+Count[10] = 11599539
+Count[11] = 10698
+Count[12] = 433635
+Count[3] = 167029
+Total number of threads = 13

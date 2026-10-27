@@ -1,0 +1,15 @@
+Count[2] = 1244405
+Count[6] = 56838
+Count[3] = 66144
+Count[1] = 14575696597
+Count[4] = 112424
+Count[5] = 75297
+Count[8] = 139486
+Count[7] = 16894
+Count[9] = 59266863
+Count[10] = 16872361
+Count[11] = 10666
+Count[12] = 433661
+Count[13] = 3671527
+Count[0] = 5359648
+Total number of threads = 14
