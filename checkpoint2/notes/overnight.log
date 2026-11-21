@@ -1,0 +1,594 @@
+================ overnight start Fri Nov 20 10:28:34 PM UTC 2026 ================
+--- phase 2 / control stragglers ---
+22:28 waiting: 10 sims alive
+22:30 waiting: 10 sims alive
+22:32 waiting: 10 sims alive
+22:34 waiting: 8 sims alive
+22:36 waiting: 8 sims alive
+22:38 waiting: 8 sims alive
+22:40 waiting: 8 sims alive
+22:42 waiting: 8 sims alive
+22:44 waiting: 8 sims alive
+22:45 waiting: 8 sims alive
+22:47 waiting: 8 sims alive
+22:49 waiting: 8 sims alive
+22:51 waiting: 8 sims alive
+22:53 waiting: 8 sims alive
+22:55 waiting: 8 sims alive
+22:57 waiting: 8 sims alive
+22:59 waiting: 8 sims alive
+23:01 waiting: 8 sims alive
+23:03 waiting: 8 sims alive
+23:05 waiting: 6 sims alive
+23:07 waiting: 4 sims alive
+23:09 waiting: 4 sims alive
+23:11 waiting: 4 sims alive
+23:13 waiting: 4 sims alive
+23:15 waiting: 4 sims alive
+23:17 waiting: 4 sims alive
+23:19 waiting: 4 sims alive
+23:21 waiting: 4 sims alive
+23:22 waiting: 4 sims alive
+--- phase 2 complete Fri Nov 20 11:24:53 PM UTC 2026 ---
+wrote /home/krishna/cs683/checkpoint2/results/summary.csv
+C       matmul  w1 no               IPC=1.738     spd=0.0%
+C       matmul  w1 spp_dev          IPC=1.748     spd=0.581%
+C       matmul  w1 ip_stride        IPC=1.738     spd=0.0%
+C       matmul  w1 control          IPC=1.748     spd=0.581%
+C       matmul  w1 gated            IPC=1.748     spd=0.581%
+C       matmul  w2 no               IPC=1.737     spd=0.0%
+C       matmul  w2 spp_dev          IPC=1.748     spd=0.645%
+C       matmul  w2 ip_stride        IPC=1.737     spd=0.0%
+C       matmul  w2 control          IPC=1.748     spd=0.645%
+C       matmul  w2 gated            IPC=1.748     spd=0.645%
+C       list    w1 no               IPC=0.04304   spd=0.0%
+C       list    w1 spp_dev          IPC=0.04304   spd=-0.007%
+C       list    w1 ip_stride        IPC=0.04304   spd=0.0%
+C       list    w1 control          IPC=0.04304   spd=-0.007%
+C       list    w1 gated            IPC=0.04304   spd=-0.007%
+C       list    w2 no               IPC=0.04304   spd=0.0%
+C       list    w2 spp_dev          IPC=0.04305   spd=0.01%
+C       list    w2 ip_stride        IPC=0.04304   spd=0.0%
+C       list    w2 control          IPC=0.04305   spd=0.01%
+C       list    w2 gated            IPC=0.04305   spd=0.01%
+Java    matmul  w1 no               IPC=2.086     spd=0.0%
+Java    matmul  w1 spp_dev          IPC=2.085     spd=-0.025%
+Java    matmul  w1 ip_stride        IPC=2.091     spd=0.243%
+Java    matmul  w1 control          IPC=2.085     spd=-0.025%
+Java    matmul  w1 gated            IPC=2.085     spd=-0.025%
+Java    matmul  w2 no               IPC=2.084     spd=0.0%
+Java    matmul  w2 spp_dev          IPC=2.086     spd=0.1%
+Java    matmul  w2 ip_stride        IPC=2.091     spd=0.35%
+Java    matmul  w2 control          IPC=2.086     spd=0.1%
+Java    matmul  w2 gated            IPC=2.086     spd=0.1%
+Java    list    w1 no               IPC=0.1145    spd=0.0%
+Java    list    w1 spp_dev          IPC=0.1113    spd=-2.883%
+Java    list    w1 ip_stride        IPC=0.1145    spd=0.0%
+Java    list    w1 control          IPC=0.1113    spd=-2.883%
+Java    list    w1 gated            IPC=0.1113    spd=-2.883%
+Java    list    w2 no               IPC=0.1144    spd=0.0%
+Java    list    w2 spp_dev          IPC=0.1095    spd=-4.436%
+Java    list    w2 ip_stride        IPC=0.1144    spd=0.0%
+Java    list    w2 control          IPC=0.1095    spd=-4.436%
+Java    list    w2 gated            IPC=0.1095    spd=-4.436%
+Python  matmul  w1 no               IPC=1.461     spd=0.0%
+Python  matmul  w1 spp_dev          IPC=1.559     spd=6.283%
+Python  matmul  w1 ip_stride        IPC=1.461     spd=0.013%
+Python  matmul  w1 control          IPC=1.559     spd=6.283%
+Python  matmul  w1 gated            IPC=1.559     spd=6.283%
+Python  matmul  w2 no               IPC=1.505     spd=0.0%
+Python  matmul  w2 spp_dev          IPC=1.611     spd=6.614%
+Python  matmul  w2 ip_stride        IPC=1.506     spd=0.06%
+Python  matmul  w2 control          IPC=1.611     spd=6.614%
+Python  matmul  w2 gated            IPC=1.611     spd=6.614%
+Python  list    w1 no               IPC=1.153     spd=0.0%
+Python  list    w1 spp_dev          IPC=1.156     spd=0.234%
+Python  list    w1 ip_stride        IPC=1.153     spd=0.0%
+Python  list    w1 control          IPC=1.156     spd=0.234%
+Python  list    w1 gated            IPC=1.156     spd=0.234%
+Python  list    w2 no               IPC=1.13      spd=0.0%
+Python  list    w2 spp_dev          IPC=1.133     spd=0.286%
+Python  list    w2 ip_stride        IPC=1.13      spd=0.0%
+Python  list    w2 control          IPC=1.133     spd=0.286%
+Python  list    w2 gated            IPC=1.133     spd=0.286%
+=== variant cap1  (s/GATE_MAX_LEVEL = [0-9]*/GATE_MAX_LEVEL = 1/)  Fri Nov 20 11:24:53 PM UTC 2026 ===
+built ok, sweeping: jll4 jll5 pmm pmmb
+== cmm (C matmul w1)
+== cmmb (C matmul w2)
+== cll (C list w1)
+== cllb (C list w2)
+== java512_full (Java matmul w1)
+== java512b_full (Java matmul w2)
+== jll4 (Java list w1)
+== jll5 (Java list w2)
+== pmm (Python matmul w1)
+== pmmb (Python matmul w2)
+== pll2 (Python list w1)
+== pllb (Python list w2)
+checkpoint2/results/cmmb_cap1.txt:Heartbeat CPU 0 instructions: 10000001 cycles: 3563791 heartbeat IPC: 2.806 cumulative IPC: 2.806 (Simulation time: 00 hr 00 min 32 sec)
+checkpoint2/results/cmmb_cap1.txt:Warmup finished CPU 0 instructions: 10000001 cycles: 3563791 cumulative IPC: 2.806 (Simulation time: 00 hr 00 min 32 sec)
+checkpoint2/results/cmmb_cap1.txt:Warmup complete CPU 0 instructions: 10000001 cycles: 3563791 cumulative IPC: 2.806 (Simulation time: 00 hr 00 min 32 sec)
+checkpoint2/results/cmmb_cap1.txt:Heartbeat CPU 0 instructions: 20000001 cycles: 9283176 heartbeat IPC: 1.748 cumulative IPC: 1.748 (Simulation time: 00 hr 01 min 18 sec)
+checkpoint2/results/cmmb_cap1.txt:Heartbeat CPU 0 instructions: 30000004 cycles: 15003952 heartbeat IPC: 1.748 cumulative IPC: 1.748 (Simulation time: 00 hr 02 min 02 sec)
+checkpoint2/results/cmmb_cap1.txt:Simulation finished CPU 0 instructions: 30000000 cycles: 17162759 cumulative IPC: 1.748 (Simulation time: 00 hr 02 min 47 sec)
+checkpoint2/results/cmmb_cap1.txt:Simulation complete CPU 0 instructions: 30000000 cycles: 17162759 cumulative IPC: 1.748 (Simulation time: 00 hr 02 min 47 sec)
+checkpoint2/results/cmmb_cap1.txt:CPU 0 cumulative IPC: 1.748 instructions: 30000000 cycles: 17162759
+checkpoint2/results/cmm_cap1.txt:Heartbeat CPU 0 instructions: 10000000 cycles: 3563499 heartbeat IPC: 2.806 cumulative IPC: 2.806 (Simulation time: 00 hr 00 min 33 sec)
+checkpoint2/results/cmm_cap1.txt:Warmup finished CPU 0 instructions: 10000000 cycles: 3563499 cumulative IPC: 2.806 (Simulation time: 00 hr 00 min 33 sec)
+checkpoint2/results/cmm_cap1.txt:Warmup complete CPU 0 instructions: 10000000 cycles: 3563499 cumulative IPC: 2.806 (Simulation time: 00 hr 00 min 33 sec)
+checkpoint2/results/cmm_cap1.txt:Heartbeat CPU 0 instructions: 20000001 cycles: 9282019 heartbeat IPC: 1.749 cumulative IPC: 1.749 (Simulation time: 00 hr 01 min 19 sec)
+checkpoint2/results/cmm_cap1.txt:Heartbeat CPU 0 instructions: 30000001 cycles: 15004443 heartbeat IPC: 1.748 cumulative IPC: 1.748 (Simulation time: 00 hr 02 min 04 sec)
+checkpoint2/results/cmm_cap1.txt:Heartbeat CPU 0 instructions: 40000001 cycles: 20725651 heartbeat IPC: 1.748 cumulative IPC: 1.748 (Simulation time: 00 hr 02 min 47 sec)
+checkpoint2/results/cmm_cap1.txt:Simulation finished CPU 0 instructions: 30000001 cycles: 17162152 cumulative IPC: 1.748 (Simulation time: 00 hr 02 min 47 sec)
+checkpoint2/results/cmm_cap1.txt:Simulation complete CPU 0 instructions: 30000001 cycles: 17162152 cumulative IPC: 1.748 (Simulation time: 00 hr 02 min 47 sec)
+checkpoint2/results/cmm_cap1.txt:CPU 0 cumulative IPC: 1.748 instructions: 30000001 cycles: 17162152
+checkpoint2/results/java512b_full_cap1.txt:Heartbeat CPU 0 instructions: 10000003 cycles: 4495542 heartbeat IPC: 2.224 cumulative IPC: 2.224 (Simulation time: 00 hr 00 min 44 sec)
+checkpoint2/results/java512b_full_cap1.txt:Warmup finished CPU 0 instructions: 10000003 cycles: 4495542 cumulative IPC: 2.224 (Simulation time: 00 hr 00 min 44 sec)
+checkpoint2/results/java512b_full_cap1.txt:Warmup complete CPU 0 instructions: 10000003 cycles: 4495542 cumulative IPC: 2.224 (Simulation time: 00 hr 00 min 44 sec)
+checkpoint2/results/java512b_full_cap1.txt:Heartbeat CPU 0 instructions: 20000007 cycles: 9293691 heartbeat IPC: 2.084 cumulative IPC: 2.084 (Simulation time: 00 hr 01 min 28 sec)
+checkpoint2/results/java512b_full_cap1.txt:Heartbeat CPU 0 instructions: 30000009 cycles: 14087967 heartbeat IPC: 2.086 cumulative IPC: 2.085 (Simulation time: 00 hr 02 min 13 sec)
+checkpoint2/results/java512b_full_cap1.txt:Simulation finished CPU 0 instructions: 30000003 cycles: 14383392 cumulative IPC: 2.086 (Simulation time: 00 hr 02 min 56 sec)
+checkpoint2/results/java512b_full_cap1.txt:Simulation complete CPU 0 instructions: 30000003 cycles: 14383392 cumulative IPC: 2.086 (Simulation time: 00 hr 02 min 56 sec)
+checkpoint2/results/java512b_full_cap1.txt:CPU 0 cumulative IPC: 2.086 instructions: 30000003 cycles: 14383392
+checkpoint2/results/java512_full_cap1.txt:Heartbeat CPU 0 instructions: 10000004 cycles: 4494788 heartbeat IPC: 2.225 cumulative IPC: 2.225 (Simulation time: 00 hr 00 min 45 sec)
+checkpoint2/results/java512_full_cap1.txt:Warmup finished CPU 0 instructions: 10000004 cycles: 4494788 cumulative IPC: 2.225 (Simulation time: 00 hr 00 min 45 sec)
+checkpoint2/results/java512_full_cap1.txt:Warmup complete CPU 0 instructions: 10000004 cycles: 4494788 cumulative IPC: 2.225 (Simulation time: 00 hr 00 min 45 sec)
+checkpoint2/results/java512_full_cap1.txt:Heartbeat CPU 0 instructions: 20000007 cycles: 9288380 heartbeat IPC: 2.086 cumulative IPC: 2.086 (Simulation time: 00 hr 01 min 29 sec)
+checkpoint2/results/java512_full_cap1.txt:Heartbeat CPU 0 instructions: 30000007 cycles: 14085598 heartbeat IPC: 2.085 cumulative IPC: 2.085 (Simulation time: 00 hr 02 min 12 sec)
+checkpoint2/results/java512_full_cap1.txt:Heartbeat CPU 0 instructions: 40000007 cycles: 18882240 heartbeat IPC: 2.085 cumulative IPC: 2.085 (Simulation time: 00 hr 02 min 54 sec)
+checkpoint2/results/java512_full_cap1.txt:Simulation finished CPU 0 instructions: 30000003 cycles: 14387452 cumulative IPC: 2.085 (Simulation time: 00 hr 02 min 54 sec)
+checkpoint2/results/java512_full_cap1.txt:Simulation complete CPU 0 instructions: 30000003 cycles: 14387452 cumulative IPC: 2.085 (Simulation time: 00 hr 02 min 54 sec)
+checkpoint2/results/java512_full_cap1.txt:CPU 0 cumulative IPC: 2.085 instructions: 30000003 cycles: 14387452
+checkpoint2/results/jll4_cap1.txt:Heartbeat CPU 0 instructions: 10000002 cycles: 3950364 heartbeat IPC: 2.531 cumulative IPC: 2.531 (Simulation time: 00 hr 00 min 44 sec)
+checkpoint2/results/jll4_cap1.txt:Warmup finished CPU 0 instructions: 10000002 cycles: 3950364 cumulative IPC: 2.531 (Simulation time: 00 hr 00 min 44 sec)
+checkpoint2/results/jll4_cap1.txt:Warmup complete CPU 0 instructions: 10000002 cycles: 3950364 cumulative IPC: 2.531 (Simulation time: 00 hr 00 min 44 sec)
+checkpoint2/results/jll4_cap1.txt:Heartbeat CPU 0 instructions: 20000004 cycles: 92362410 heartbeat IPC: 0.1131 cumulative IPC: 0.1131 (Simulation time: 00 hr 08 min 20 sec)
+checkpoint2/results/jll4_cap1.txt:Heartbeat CPU 0 instructions: 30000005 cycles: 181808326 heartbeat IPC: 0.1118 cumulative IPC: 0.1124 (Simulation time: 00 hr 15 min 54 sec)
+checkpoint2/results/jll4_cap1.txt:Simulation finished CPU 0 instructions: 30000000 cycles: 269531701 cumulative IPC: 0.1113 (Simulation time: 00 hr 23 min 47 sec)
+checkpoint2/results/jll4_cap1.txt:Simulation complete CPU 0 instructions: 30000000 cycles: 269531701 cumulative IPC: 0.1113 (Simulation time: 00 hr 23 min 47 sec)
+checkpoint2/results/jll4_cap1.txt:CPU 0 cumulative IPC: 0.1113 instructions: 30000000 cycles: 269531701
+checkpoint2/results/jll5_cap1.txt:Heartbeat CPU 0 instructions: 10000000 cycles: 3952777 heartbeat IPC: 2.53 cumulative IPC: 2.53 (Simulation time: 00 hr 00 min 46 sec)
+checkpoint2/results/jll5_cap1.txt:Warmup finished CPU 0 instructions: 10000000 cycles: 3952777 cumulative IPC: 2.53 (Simulation time: 00 hr 00 min 46 sec)
+checkpoint2/results/jll5_cap1.txt:Warmup complete CPU 0 instructions: 10000000 cycles: 3952777 cumulative IPC: 2.53 (Simulation time: 00 hr 00 min 46 sec)
+checkpoint2/results/jll5_cap1.txt:Heartbeat CPU 0 instructions: 20000002 cycles: 95690166 heartbeat IPC: 0.109 cumulative IPC: 0.109 (Simulation time: 00 hr 08 min 40 sec)
+checkpoint2/results/jll5_cap1.txt:Heartbeat CPU 0 instructions: 30000005 cycles: 187492849 heartbeat IPC: 0.1089 cumulative IPC: 0.109 (Simulation time: 00 hr 16 min 39 sec)
+checkpoint2/results/jll5_cap1.txt:Simulation finished CPU 0 instructions: 30000000 cycles: 273880536 cumulative IPC: 0.1095 (Simulation time: 00 hr 24 min 21 sec)
+checkpoint2/results/jll5_cap1.txt:Simulation complete CPU 0 instructions: 30000000 cycles: 273880536 cumulative IPC: 0.1095 (Simulation time: 00 hr 24 min 21 sec)
+checkpoint2/results/jll5_cap1.txt:CPU 0 cumulative IPC: 0.1095 instructions: 30000000 cycles: 273880536
+checkpoint2/results/pll2_cap1.txt:Heartbeat CPU 0 instructions: 10000003 cycles: 4307419 heartbeat IPC: 2.322 cumulative IPC: 2.322 (Simulation time: 00 hr 00 min 43 sec)
+checkpoint2/results/pll2_cap1.txt:Warmup finished CPU 0 instructions: 10000003 cycles: 4307419 cumulative IPC: 2.322 (Simulation time: 00 hr 00 min 43 sec)
+checkpoint2/results/pll2_cap1.txt:Warmup complete CPU 0 instructions: 10000003 cycles: 4307419 cumulative IPC: 2.322 (Simulation time: 00 hr 00 min 43 sec)
+checkpoint2/results/pll2_cap1.txt:Heartbeat CPU 0 instructions: 20000003 cycles: 13098810 heartbeat IPC: 1.137 cumulative IPC: 1.137 (Simulation time: 00 hr 01 min 41 sec)
+checkpoint2/results/pll2_cap1.txt:Heartbeat CPU 0 instructions: 30000006 cycles: 21745378 heartbeat IPC: 1.157 cumulative IPC: 1.147 (Simulation time: 00 hr 02 min 38 sec)
+checkpoint2/results/pll2_cap1.txt:Simulation finished CPU 0 instructions: 30000002 cycles: 25954434 cumulative IPC: 1.156 (Simulation time: 00 hr 03 min 34 sec)
+checkpoint2/results/pll2_cap1.txt:Simulation complete CPU 0 instructions: 30000002 cycles: 25954434 cumulative IPC: 1.156 (Simulation time: 00 hr 03 min 34 sec)
+checkpoint2/results/pll2_cap1.txt:CPU 0 cumulative IPC: 1.156 instructions: 30000002 cycles: 25954434
+checkpoint2/results/pmmb_cap1.txt:Heartbeat CPU 0 instructions: 10000002 cycles: 3499438 heartbeat IPC: 2.858 cumulative IPC: 2.858 (Simulation time: 00 hr 00 min 36 sec)
+checkpoint2/results/pmmb_cap1.txt:Warmup finished CPU 0 instructions: 10000002 cycles: 3499438 cumulative IPC: 2.858 (Simulation time: 00 hr 00 min 36 sec)
+checkpoint2/results/pmmb_cap1.txt:Warmup complete CPU 0 instructions: 10000002 cycles: 3499438 cumulative IPC: 2.858 (Simulation time: 00 hr 00 min 36 sec)
+checkpoint2/results/pmmb_cap1.txt:Heartbeat CPU 0 instructions: 20000004 cycles: 9713224 heartbeat IPC: 1.609 cumulative IPC: 1.609 (Simulation time: 00 hr 01 min 15 sec)
+checkpoint2/results/pmmb_cap1.txt:Heartbeat CPU 0 instructions: 30000005 cycles: 15910506 heartbeat IPC: 1.614 cumulative IPC: 1.611 (Simulation time: 00 hr 01 min 54 sec)
+checkpoint2/results/pmmb_cap1.txt:Simulation finished CPU 0 instructions: 30000002 cycles: 18618773 cumulative IPC: 1.611 (Simulation time: 00 hr 02 min 33 sec)
+checkpoint2/results/pmmb_cap1.txt:Simulation complete CPU 0 instructions: 30000002 cycles: 18618773 cumulative IPC: 1.611 (Simulation time: 00 hr 02 min 33 sec)
+checkpoint2/results/pmmb_cap1.txt:CPU 0 cumulative IPC: 1.611 instructions: 30000002 cycles: 18618773
+checkpoint2/results/pmm_cap1.txt:Heartbeat CPU 0 instructions: 10000003 cycles: 3409909 heartbeat IPC: 2.933 cumulative IPC: 2.933 (Simulation time: 00 hr 00 min 36 sec)
+checkpoint2/results/pmm_cap1.txt:Warmup finished CPU 0 instructions: 10000003 cycles: 3409909 cumulative IPC: 2.933 (Simulation time: 00 hr 00 min 36 sec)
+checkpoint2/results/pmm_cap1.txt:Warmup complete CPU 0 instructions: 10000003 cycles: 3409909 cumulative IPC: 2.933 (Simulation time: 00 hr 00 min 36 sec)
+checkpoint2/results/pmm_cap1.txt:Heartbeat CPU 0 instructions: 20000003 cycles: 9812720 heartbeat IPC: 1.562 cumulative IPC: 1.562 (Simulation time: 00 hr 01 min 15 sec)
+checkpoint2/results/pmm_cap1.txt:Heartbeat CPU 0 instructions: 30000006 cycles: 16237132 heartbeat IPC: 1.557 cumulative IPC: 1.559 (Simulation time: 00 hr 01 min 56 sec)
+checkpoint2/results/pmm_cap1.txt:Simulation finished CPU 0 instructions: 30000000 cycles: 19240290 cumulative IPC: 1.559 (Simulation time: 00 hr 02 min 38 sec)
+checkpoint2/results/pmm_cap1.txt:Simulation complete CPU 0 instructions: 30000000 cycles: 19240290 cumulative IPC: 1.559 (Simulation time: 00 hr 02 min 38 sec)
+checkpoint2/results/pmm_cap1.txt:CPU 0 cumulative IPC: 1.559 instructions: 30000000 cycles: 19240290
+23:59 waiting: 3 sims alive
+00:01 waiting: 2 sims alive
+00:03 waiting: 2 sims alive
+00:05 waiting: 2 sims alive
+00:06 waiting: 2 sims alive
+00:08 waiting: 2 sims alive
+00:10 waiting: 2 sims alive
+00:12 waiting: 2 sims alive
+00:14 waiting: 2 sims alive
+=== variant cap2  (s/GATE_MAX_LEVEL = [0-9]*/GATE_MAX_LEVEL = 2/)  Sat Nov 21 12:16:34 AM UTC 2026 ===
+built ok, sweeping: jll4 jll5 pmm pmmb
+== cmm (C matmul w1)
+== cmmb (C matmul w2)
+== cll (C list w1)
+== cllb (C list w2)
+== java512_full (Java matmul w1)
+== java512b_full (Java matmul w2)
+== jll4 (Java list w1)
+== jll5 (Java list w2)
+== pmm (Python matmul w1)
+== pmmb (Python matmul w2)
+== pll2 (Python list w1)
+== pllb (Python list w2)
+checkpoint2/results/cmmb_cap2.txt:Heartbeat CPU 0 instructions: 10000001 cycles: 3563791 heartbeat IPC: 2.806 cumulative IPC: 2.806 (Simulation time: 00 hr 00 min 35 sec)
+checkpoint2/results/cmmb_cap2.txt:Warmup finished CPU 0 instructions: 10000001 cycles: 3563791 cumulative IPC: 2.806 (Simulation time: 00 hr 00 min 35 sec)
+checkpoint2/results/cmmb_cap2.txt:Warmup complete CPU 0 instructions: 10000001 cycles: 3563791 cumulative IPC: 2.806 (Simulation time: 00 hr 00 min 35 sec)
+checkpoint2/results/cmmb_cap2.txt:Heartbeat CPU 0 instructions: 20000001 cycles: 9283176 heartbeat IPC: 1.748 cumulative IPC: 1.748 (Simulation time: 00 hr 01 min 18 sec)
+checkpoint2/results/cmmb_cap2.txt:Heartbeat CPU 0 instructions: 30000004 cycles: 15003952 heartbeat IPC: 1.748 cumulative IPC: 1.748 (Simulation time: 00 hr 02 min 03 sec)
+checkpoint2/results/cmmb_cap2.txt:Simulation finished CPU 0 instructions: 30000000 cycles: 17162759 cumulative IPC: 1.748 (Simulation time: 00 hr 02 min 48 sec)
+checkpoint2/results/cmmb_cap2.txt:Simulation complete CPU 0 instructions: 30000000 cycles: 17162759 cumulative IPC: 1.748 (Simulation time: 00 hr 02 min 48 sec)
+checkpoint2/results/cmmb_cap2.txt:CPU 0 cumulative IPC: 1.748 instructions: 30000000 cycles: 17162759
+checkpoint2/results/cmm_cap2.txt:Heartbeat CPU 0 instructions: 10000000 cycles: 3563499 heartbeat IPC: 2.806 cumulative IPC: 2.806 (Simulation time: 00 hr 00 min 34 sec)
+checkpoint2/results/cmm_cap2.txt:Warmup finished CPU 0 instructions: 10000000 cycles: 3563499 cumulative IPC: 2.806 (Simulation time: 00 hr 00 min 34 sec)
+checkpoint2/results/cmm_cap2.txt:Warmup complete CPU 0 instructions: 10000000 cycles: 3563499 cumulative IPC: 2.806 (Simulation time: 00 hr 00 min 34 sec)
+checkpoint2/results/cmm_cap2.txt:Heartbeat CPU 0 instructions: 20000001 cycles: 9282019 heartbeat IPC: 1.749 cumulative IPC: 1.749 (Simulation time: 00 hr 01 min 19 sec)
+checkpoint2/results/cmm_cap2.txt:Heartbeat CPU 0 instructions: 30000001 cycles: 15004443 heartbeat IPC: 1.748 cumulative IPC: 1.748 (Simulation time: 00 hr 02 min 04 sec)
+checkpoint2/results/cmm_cap2.txt:Heartbeat CPU 0 instructions: 40000001 cycles: 20725651 heartbeat IPC: 1.748 cumulative IPC: 1.748 (Simulation time: 00 hr 02 min 49 sec)
+checkpoint2/results/cmm_cap2.txt:Simulation finished CPU 0 instructions: 30000001 cycles: 17162152 cumulative IPC: 1.748 (Simulation time: 00 hr 02 min 49 sec)
+checkpoint2/results/cmm_cap2.txt:Simulation complete CPU 0 instructions: 30000001 cycles: 17162152 cumulative IPC: 1.748 (Simulation time: 00 hr 02 min 49 sec)
+checkpoint2/results/cmm_cap2.txt:CPU 0 cumulative IPC: 1.748 instructions: 30000001 cycles: 17162152
+checkpoint2/results/java512b_full_cap2.txt:Heartbeat CPU 0 instructions: 10000003 cycles: 4495542 heartbeat IPC: 2.224 cumulative IPC: 2.224 (Simulation time: 00 hr 00 min 47 sec)
+checkpoint2/results/java512b_full_cap2.txt:Warmup finished CPU 0 instructions: 10000003 cycles: 4495542 cumulative IPC: 2.224 (Simulation time: 00 hr 00 min 47 sec)
+checkpoint2/results/java512b_full_cap2.txt:Warmup complete CPU 0 instructions: 10000003 cycles: 4495542 cumulative IPC: 2.224 (Simulation time: 00 hr 00 min 47 sec)
+checkpoint2/results/java512b_full_cap2.txt:Heartbeat CPU 0 instructions: 20000007 cycles: 9293691 heartbeat IPC: 2.084 cumulative IPC: 2.084 (Simulation time: 00 hr 01 min 30 sec)
+checkpoint2/results/java512b_full_cap2.txt:Heartbeat CPU 0 instructions: 30000009 cycles: 14087967 heartbeat IPC: 2.086 cumulative IPC: 2.085 (Simulation time: 00 hr 02 min 15 sec)
+checkpoint2/results/java512b_full_cap2.txt:Simulation finished CPU 0 instructions: 30000003 cycles: 14383392 cumulative IPC: 2.086 (Simulation time: 00 hr 02 min 59 sec)
+checkpoint2/results/java512b_full_cap2.txt:Simulation complete CPU 0 instructions: 30000003 cycles: 14383392 cumulative IPC: 2.086 (Simulation time: 00 hr 02 min 59 sec)
+checkpoint2/results/java512b_full_cap2.txt:CPU 0 cumulative IPC: 2.086 instructions: 30000003 cycles: 14383392
+checkpoint2/results/java512_full_cap2.txt:Heartbeat CPU 0 instructions: 10000004 cycles: 4494788 heartbeat IPC: 2.225 cumulative IPC: 2.225 (Simulation time: 00 hr 00 min 47 sec)
+checkpoint2/results/java512_full_cap2.txt:Warmup finished CPU 0 instructions: 10000004 cycles: 4494788 cumulative IPC: 2.225 (Simulation time: 00 hr 00 min 47 sec)
+checkpoint2/results/java512_full_cap2.txt:Warmup complete CPU 0 instructions: 10000004 cycles: 4494788 cumulative IPC: 2.225 (Simulation time: 00 hr 00 min 47 sec)
+checkpoint2/results/java512_full_cap2.txt:Heartbeat CPU 0 instructions: 20000007 cycles: 9288380 heartbeat IPC: 2.086 cumulative IPC: 2.086 (Simulation time: 00 hr 01 min 32 sec)
+checkpoint2/results/java512_full_cap2.txt:Heartbeat CPU 0 instructions: 30000007 cycles: 14085598 heartbeat IPC: 2.085 cumulative IPC: 2.085 (Simulation time: 00 hr 02 min 16 sec)
+checkpoint2/results/java512_full_cap2.txt:Heartbeat CPU 0 instructions: 40000007 cycles: 18882240 heartbeat IPC: 2.085 cumulative IPC: 2.085 (Simulation time: 00 hr 03 min 00 sec)
+checkpoint2/results/java512_full_cap2.txt:Simulation finished CPU 0 instructions: 30000003 cycles: 14387452 cumulative IPC: 2.085 (Simulation time: 00 hr 03 min 00 sec)
+checkpoint2/results/java512_full_cap2.txt:Simulation complete CPU 0 instructions: 30000003 cycles: 14387452 cumulative IPC: 2.085 (Simulation time: 00 hr 03 min 00 sec)
+checkpoint2/results/java512_full_cap2.txt:CPU 0 cumulative IPC: 2.085 instructions: 30000003 cycles: 14387452
+checkpoint2/results/jll4_cap2.txt:Heartbeat CPU 0 instructions: 10000002 cycles: 3950364 heartbeat IPC: 2.531 cumulative IPC: 2.531 (Simulation time: 00 hr 00 min 46 sec)
+checkpoint2/results/jll4_cap2.txt:Warmup finished CPU 0 instructions: 10000002 cycles: 3950364 cumulative IPC: 2.531 (Simulation time: 00 hr 00 min 46 sec)
+checkpoint2/results/jll4_cap2.txt:Warmup complete CPU 0 instructions: 10000002 cycles: 3950364 cumulative IPC: 2.531 (Simulation time: 00 hr 00 min 46 sec)
+checkpoint2/results/jll4_cap2.txt:Heartbeat CPU 0 instructions: 20000004 cycles: 92362410 heartbeat IPC: 0.1131 cumulative IPC: 0.1131 (Simulation time: 00 hr 08 min 25 sec)
+checkpoint2/results/jll4_cap2.txt:Heartbeat CPU 0 instructions: 30000005 cycles: 181808326 heartbeat IPC: 0.1118 cumulative IPC: 0.1124 (Simulation time: 00 hr 16 min 10 sec)
+checkpoint2/results/jll4_cap2.txt:Simulation finished CPU 0 instructions: 30000000 cycles: 269531701 cumulative IPC: 0.1113 (Simulation time: 00 hr 24 min 09 sec)
+checkpoint2/results/jll4_cap2.txt:Simulation complete CPU 0 instructions: 30000000 cycles: 269531701 cumulative IPC: 0.1113 (Simulation time: 00 hr 24 min 09 sec)
+checkpoint2/results/jll4_cap2.txt:CPU 0 cumulative IPC: 0.1113 instructions: 30000000 cycles: 269531701
+checkpoint2/results/jll5_cap2.txt:Heartbeat CPU 0 instructions: 10000000 cycles: 3952777 heartbeat IPC: 2.53 cumulative IPC: 2.53 (Simulation time: 00 hr 00 min 47 sec)
+checkpoint2/results/jll5_cap2.txt:Warmup finished CPU 0 instructions: 10000000 cycles: 3952777 cumulative IPC: 2.53 (Simulation time: 00 hr 00 min 47 sec)
+checkpoint2/results/jll5_cap2.txt:Warmup complete CPU 0 instructions: 10000000 cycles: 3952777 cumulative IPC: 2.53 (Simulation time: 00 hr 00 min 47 sec)
+checkpoint2/results/jll5_cap2.txt:Heartbeat CPU 0 instructions: 20000002 cycles: 95690166 heartbeat IPC: 0.109 cumulative IPC: 0.109 (Simulation time: 00 hr 08 min 40 sec)
+checkpoint2/results/jll5_cap2.txt:Heartbeat CPU 0 instructions: 30000005 cycles: 187492849 heartbeat IPC: 0.1089 cumulative IPC: 0.109 (Simulation time: 00 hr 16 min 34 sec)
+checkpoint2/results/jll5_cap2.txt:Simulation finished CPU 0 instructions: 30000000 cycles: 273880536 cumulative IPC: 0.1095 (Simulation time: 00 hr 24 min 32 sec)
+checkpoint2/results/jll5_cap2.txt:Simulation complete CPU 0 instructions: 30000000 cycles: 273880536 cumulative IPC: 0.1095 (Simulation time: 00 hr 24 min 32 sec)
+checkpoint2/results/jll5_cap2.txt:CPU 0 cumulative IPC: 0.1095 instructions: 30000000 cycles: 273880536
+checkpoint2/results/pll2_cap2.txt:Heartbeat CPU 0 instructions: 10000003 cycles: 4307419 heartbeat IPC: 2.322 cumulative IPC: 2.322 (Simulation time: 00 hr 00 min 42 sec)
+checkpoint2/results/pll2_cap2.txt:Warmup finished CPU 0 instructions: 10000003 cycles: 4307419 cumulative IPC: 2.322 (Simulation time: 00 hr 00 min 42 sec)
+checkpoint2/results/pll2_cap2.txt:Warmup complete CPU 0 instructions: 10000003 cycles: 4307419 cumulative IPC: 2.322 (Simulation time: 00 hr 00 min 42 sec)
+checkpoint2/results/pll2_cap2.txt:Heartbeat CPU 0 instructions: 20000003 cycles: 13098810 heartbeat IPC: 1.137 cumulative IPC: 1.137 (Simulation time: 00 hr 01 min 40 sec)
+checkpoint2/results/pll2_cap2.txt:Heartbeat CPU 0 instructions: 30000006 cycles: 21745378 heartbeat IPC: 1.157 cumulative IPC: 1.147 (Simulation time: 00 hr 02 min 36 sec)
+checkpoint2/results/pll2_cap2.txt:Simulation finished CPU 0 instructions: 30000002 cycles: 25954434 cumulative IPC: 1.156 (Simulation time: 00 hr 03 min 33 sec)
+checkpoint2/results/pll2_cap2.txt:Simulation complete CPU 0 instructions: 30000002 cycles: 25954434 cumulative IPC: 1.156 (Simulation time: 00 hr 03 min 33 sec)
+checkpoint2/results/pll2_cap2.txt:CPU 0 cumulative IPC: 1.156 instructions: 30000002 cycles: 25954434
+checkpoint2/results/pmmb_cap2.txt:Heartbeat CPU 0 instructions: 10000002 cycles: 3499438 heartbeat IPC: 2.858 cumulative IPC: 2.858 (Simulation time: 00 hr 00 min 37 sec)
+checkpoint2/results/pmmb_cap2.txt:Warmup finished CPU 0 instructions: 10000002 cycles: 3499438 cumulative IPC: 2.858 (Simulation time: 00 hr 00 min 37 sec)
+checkpoint2/results/pmmb_cap2.txt:Warmup complete CPU 0 instructions: 10000002 cycles: 3499438 cumulative IPC: 2.858 (Simulation time: 00 hr 00 min 37 sec)
+checkpoint2/results/pmmb_cap2.txt:Heartbeat CPU 0 instructions: 20000004 cycles: 9713224 heartbeat IPC: 1.609 cumulative IPC: 1.609 (Simulation time: 00 hr 01 min 16 sec)
+checkpoint2/results/pmmb_cap2.txt:Heartbeat CPU 0 instructions: 30000005 cycles: 15910506 heartbeat IPC: 1.614 cumulative IPC: 1.611 (Simulation time: 00 hr 01 min 56 sec)
+checkpoint2/results/pmmb_cap2.txt:Simulation finished CPU 0 instructions: 30000002 cycles: 18618773 cumulative IPC: 1.611 (Simulation time: 00 hr 02 min 37 sec)
+checkpoint2/results/pmmb_cap2.txt:Simulation complete CPU 0 instructions: 30000002 cycles: 18618773 cumulative IPC: 1.611 (Simulation time: 00 hr 02 min 37 sec)
+checkpoint2/results/pmmb_cap2.txt:CPU 0 cumulative IPC: 1.611 instructions: 30000002 cycles: 18618773
+checkpoint2/results/pmm_cap2.txt:Heartbeat CPU 0 instructions: 10000003 cycles: 3409909 heartbeat IPC: 2.933 cumulative IPC: 2.933 (Simulation time: 00 hr 00 min 38 sec)
+checkpoint2/results/pmm_cap2.txt:Warmup finished CPU 0 instructions: 10000003 cycles: 3409909 cumulative IPC: 2.933 (Simulation time: 00 hr 00 min 38 sec)
+checkpoint2/results/pmm_cap2.txt:Warmup complete CPU 0 instructions: 10000003 cycles: 3409909 cumulative IPC: 2.933 (Simulation time: 00 hr 00 min 38 sec)
+checkpoint2/results/pmm_cap2.txt:Heartbeat CPU 0 instructions: 20000003 cycles: 9812720 heartbeat IPC: 1.562 cumulative IPC: 1.562 (Simulation time: 00 hr 01 min 17 sec)
+checkpoint2/results/pmm_cap2.txt:Heartbeat CPU 0 instructions: 30000006 cycles: 16237132 heartbeat IPC: 1.557 cumulative IPC: 1.559 (Simulation time: 00 hr 01 min 56 sec)
+checkpoint2/results/pmm_cap2.txt:Simulation finished CPU 0 instructions: 30000000 cycles: 19240290 cumulative IPC: 1.559 (Simulation time: 00 hr 02 min 36 sec)
+checkpoint2/results/pmm_cap2.txt:Simulation complete CPU 0 instructions: 30000000 cycles: 19240290 cumulative IPC: 1.559 (Simulation time: 00 hr 02 min 36 sec)
+checkpoint2/results/pmm_cap2.txt:CPU 0 cumulative IPC: 1.559 instructions: 30000000 cycles: 19240290
+00:51 waiting: 3 sims alive
+00:53 waiting: 2 sims alive
+00:55 waiting: 2 sims alive
+00:56 waiting: 2 sims alive
+00:58 waiting: 2 sims alive
+01:00 waiting: 2 sims alive
+01:02 waiting: 2 sims alive
+01:04 waiting: 2 sims alive
+01:06 waiting: 1 sims alive
+=== variant wh100  (s/GATE_WASTE_HIGH = [0-9]*/GATE_WASTE_HIGH = 100/)  Sat Nov 21 01:08:22 AM UTC 2026 ===
+built ok, sweeping: jll4 pmm
+== cmm (C matmul w1)
+== cmmb (C matmul w2)
+== cll (C list w1)
+== cllb (C list w2)
+== java512_full (Java matmul w1)
+== java512b_full (Java matmul w2)
+== jll4 (Java list w1)
+== jll5 (Java list w2)
+== pmm (Python matmul w1)
+== pmmb (Python matmul w2)
+== pll2 (Python list w1)
+== pllb (Python list w2)
+checkpoint2/results/cmmb_wh100.txt:Heartbeat CPU 0 instructions: 10000001 cycles: 3563791 heartbeat IPC: 2.806 cumulative IPC: 2.806 (Simulation time: 00 hr 00 min 34 sec)
+checkpoint2/results/cmmb_wh100.txt:Warmup finished CPU 0 instructions: 10000001 cycles: 3563791 cumulative IPC: 2.806 (Simulation time: 00 hr 00 min 34 sec)
+checkpoint2/results/cmmb_wh100.txt:Warmup complete CPU 0 instructions: 10000001 cycles: 3563791 cumulative IPC: 2.806 (Simulation time: 00 hr 00 min 34 sec)
+checkpoint2/results/cmmb_wh100.txt:Heartbeat CPU 0 instructions: 20000001 cycles: 9283176 heartbeat IPC: 1.748 cumulative IPC: 1.748 (Simulation time: 00 hr 01 min 20 sec)
+checkpoint2/results/cmmb_wh100.txt:Heartbeat CPU 0 instructions: 30000004 cycles: 15003952 heartbeat IPC: 1.748 cumulative IPC: 1.748 (Simulation time: 00 hr 02 min 04 sec)
+checkpoint2/results/cmmb_wh100.txt:Simulation finished CPU 0 instructions: 30000000 cycles: 17162759 cumulative IPC: 1.748 (Simulation time: 00 hr 02 min 50 sec)
+checkpoint2/results/cmmb_wh100.txt:Simulation complete CPU 0 instructions: 30000000 cycles: 17162759 cumulative IPC: 1.748 (Simulation time: 00 hr 02 min 50 sec)
+checkpoint2/results/cmmb_wh100.txt:CPU 0 cumulative IPC: 1.748 instructions: 30000000 cycles: 17162759
+checkpoint2/results/cmm_wh100.txt:Heartbeat CPU 0 instructions: 10000000 cycles: 3563499 heartbeat IPC: 2.806 cumulative IPC: 2.806 (Simulation time: 00 hr 00 min 34 sec)
+checkpoint2/results/cmm_wh100.txt:Warmup finished CPU 0 instructions: 10000000 cycles: 3563499 cumulative IPC: 2.806 (Simulation time: 00 hr 00 min 34 sec)
+checkpoint2/results/cmm_wh100.txt:Warmup complete CPU 0 instructions: 10000000 cycles: 3563499 cumulative IPC: 2.806 (Simulation time: 00 hr 00 min 34 sec)
+checkpoint2/results/cmm_wh100.txt:Heartbeat CPU 0 instructions: 20000001 cycles: 9282019 heartbeat IPC: 1.749 cumulative IPC: 1.749 (Simulation time: 00 hr 01 min 19 sec)
+checkpoint2/results/cmm_wh100.txt:Heartbeat CPU 0 instructions: 30000001 cycles: 15004443 heartbeat IPC: 1.748 cumulative IPC: 1.748 (Simulation time: 00 hr 02 min 05 sec)
+checkpoint2/results/cmm_wh100.txt:Heartbeat CPU 0 instructions: 40000001 cycles: 20725651 heartbeat IPC: 1.748 cumulative IPC: 1.748 (Simulation time: 00 hr 02 min 48 sec)
+checkpoint2/results/cmm_wh100.txt:Simulation finished CPU 0 instructions: 30000001 cycles: 17162152 cumulative IPC: 1.748 (Simulation time: 00 hr 02 min 48 sec)
+checkpoint2/results/cmm_wh100.txt:Simulation complete CPU 0 instructions: 30000001 cycles: 17162152 cumulative IPC: 1.748 (Simulation time: 00 hr 02 min 48 sec)
+checkpoint2/results/cmm_wh100.txt:CPU 0 cumulative IPC: 1.748 instructions: 30000001 cycles: 17162152
+checkpoint2/results/java512b_full_wh100.txt:Heartbeat CPU 0 instructions: 10000003 cycles: 4495542 heartbeat IPC: 2.224 cumulative IPC: 2.224 (Simulation time: 00 hr 00 min 47 sec)
+checkpoint2/results/java512b_full_wh100.txt:Warmup finished CPU 0 instructions: 10000003 cycles: 4495542 cumulative IPC: 2.224 (Simulation time: 00 hr 00 min 47 sec)
+checkpoint2/results/java512b_full_wh100.txt:Warmup complete CPU 0 instructions: 10000003 cycles: 4495542 cumulative IPC: 2.224 (Simulation time: 00 hr 00 min 47 sec)
+checkpoint2/results/java512b_full_wh100.txt:Heartbeat CPU 0 instructions: 20000007 cycles: 9293691 heartbeat IPC: 2.084 cumulative IPC: 2.084 (Simulation time: 00 hr 01 min 33 sec)
+checkpoint2/results/java512b_full_wh100.txt:Heartbeat CPU 0 instructions: 30000009 cycles: 14087967 heartbeat IPC: 2.086 cumulative IPC: 2.085 (Simulation time: 00 hr 02 min 17 sec)
+checkpoint2/results/java512b_full_wh100.txt:Simulation finished CPU 0 instructions: 30000003 cycles: 14383392 cumulative IPC: 2.086 (Simulation time: 00 hr 03 min 01 sec)
+checkpoint2/results/java512b_full_wh100.txt:Simulation complete CPU 0 instructions: 30000003 cycles: 14383392 cumulative IPC: 2.086 (Simulation time: 00 hr 03 min 01 sec)
+checkpoint2/results/java512b_full_wh100.txt:CPU 0 cumulative IPC: 2.086 instructions: 30000003 cycles: 14383392
+checkpoint2/results/java512_full_wh100.txt:Heartbeat CPU 0 instructions: 10000004 cycles: 4494788 heartbeat IPC: 2.225 cumulative IPC: 2.225 (Simulation time: 00 hr 00 min 47 sec)
+checkpoint2/results/java512_full_wh100.txt:Warmup finished CPU 0 instructions: 10000004 cycles: 4494788 cumulative IPC: 2.225 (Simulation time: 00 hr 00 min 47 sec)
+checkpoint2/results/java512_full_wh100.txt:Warmup complete CPU 0 instructions: 10000004 cycles: 4494788 cumulative IPC: 2.225 (Simulation time: 00 hr 00 min 47 sec)
+checkpoint2/results/java512_full_wh100.txt:Heartbeat CPU 0 instructions: 20000007 cycles: 9288380 heartbeat IPC: 2.086 cumulative IPC: 2.086 (Simulation time: 00 hr 01 min 32 sec)
+checkpoint2/results/java512_full_wh100.txt:Heartbeat CPU 0 instructions: 30000007 cycles: 14085598 heartbeat IPC: 2.085 cumulative IPC: 2.085 (Simulation time: 00 hr 02 min 16 sec)
+checkpoint2/results/java512_full_wh100.txt:Heartbeat CPU 0 instructions: 40000007 cycles: 18882240 heartbeat IPC: 2.085 cumulative IPC: 2.085 (Simulation time: 00 hr 02 min 58 sec)
+checkpoint2/results/java512_full_wh100.txt:Simulation finished CPU 0 instructions: 30000003 cycles: 14387452 cumulative IPC: 2.085 (Simulation time: 00 hr 02 min 58 sec)
+checkpoint2/results/java512_full_wh100.txt:Simulation complete CPU 0 instructions: 30000003 cycles: 14387452 cumulative IPC: 2.085 (Simulation time: 00 hr 02 min 58 sec)
+checkpoint2/results/java512_full_wh100.txt:CPU 0 cumulative IPC: 2.085 instructions: 30000003 cycles: 14387452
+checkpoint2/results/jll4_wh100.txt:Heartbeat CPU 0 instructions: 10000002 cycles: 3950364 heartbeat IPC: 2.531 cumulative IPC: 2.531 (Simulation time: 00 hr 00 min 46 sec)
+checkpoint2/results/jll4_wh100.txt:Warmup finished CPU 0 instructions: 10000002 cycles: 3950364 cumulative IPC: 2.531 (Simulation time: 00 hr 00 min 46 sec)
+checkpoint2/results/jll4_wh100.txt:Warmup complete CPU 0 instructions: 10000002 cycles: 3950364 cumulative IPC: 2.531 (Simulation time: 00 hr 00 min 46 sec)
+checkpoint2/results/jll4_wh100.txt:Heartbeat CPU 0 instructions: 20000004 cycles: 92362410 heartbeat IPC: 0.1131 cumulative IPC: 0.1131 (Simulation time: 00 hr 08 min 17 sec)
+checkpoint2/results/jll4_wh100.txt:Heartbeat CPU 0 instructions: 30000005 cycles: 181808326 heartbeat IPC: 0.1118 cumulative IPC: 0.1124 (Simulation time: 00 hr 15 min 59 sec)
+checkpoint2/results/jll4_wh100.txt:Simulation finished CPU 0 instructions: 30000000 cycles: 269531701 cumulative IPC: 0.1113 (Simulation time: 00 hr 23 min 53 sec)
+checkpoint2/results/jll4_wh100.txt:Simulation complete CPU 0 instructions: 30000000 cycles: 269531701 cumulative IPC: 0.1113 (Simulation time: 00 hr 23 min 53 sec)
+checkpoint2/results/jll4_wh100.txt:CPU 0 cumulative IPC: 0.1113 instructions: 30000000 cycles: 269531701
+checkpoint2/results/jll5_wh100.txt:Heartbeat CPU 0 instructions: 10000000 cycles: 3952777 heartbeat IPC: 2.53 cumulative IPC: 2.53 (Simulation time: 00 hr 00 min 46 sec)
+checkpoint2/results/jll5_wh100.txt:Warmup finished CPU 0 instructions: 10000000 cycles: 3952777 cumulative IPC: 2.53 (Simulation time: 00 hr 00 min 46 sec)
+checkpoint2/results/jll5_wh100.txt:Warmup complete CPU 0 instructions: 10000000 cycles: 3952777 cumulative IPC: 2.53 (Simulation time: 00 hr 00 min 46 sec)
+checkpoint2/results/jll5_wh100.txt:Heartbeat CPU 0 instructions: 20000002 cycles: 95690166 heartbeat IPC: 0.109 cumulative IPC: 0.109 (Simulation time: 00 hr 08 min 41 sec)
+checkpoint2/results/jll5_wh100.txt:Heartbeat CPU 0 instructions: 30000005 cycles: 187492849 heartbeat IPC: 0.1089 cumulative IPC: 0.109 (Simulation time: 00 hr 16 min 33 sec)
+checkpoint2/results/jll5_wh100.txt:Simulation finished CPU 0 instructions: 30000000 cycles: 273880536 cumulative IPC: 0.1095 (Simulation time: 00 hr 24 min 18 sec)
+checkpoint2/results/jll5_wh100.txt:Simulation complete CPU 0 instructions: 30000000 cycles: 273880536 cumulative IPC: 0.1095 (Simulation time: 00 hr 24 min 18 sec)
+checkpoint2/results/jll5_wh100.txt:CPU 0 cumulative IPC: 0.1095 instructions: 30000000 cycles: 273880536
+checkpoint2/results/pll2_wh100.txt:Heartbeat CPU 0 instructions: 10000003 cycles: 4307419 heartbeat IPC: 2.322 cumulative IPC: 2.322 (Simulation time: 00 hr 00 min 41 sec)
+checkpoint2/results/pll2_wh100.txt:Warmup finished CPU 0 instructions: 10000003 cycles: 4307419 cumulative IPC: 2.322 (Simulation time: 00 hr 00 min 41 sec)
+checkpoint2/results/pll2_wh100.txt:Warmup complete CPU 0 instructions: 10000003 cycles: 4307419 cumulative IPC: 2.322 (Simulation time: 00 hr 00 min 41 sec)
+checkpoint2/results/pll2_wh100.txt:Heartbeat CPU 0 instructions: 20000003 cycles: 13098810 heartbeat IPC: 1.137 cumulative IPC: 1.137 (Simulation time: 00 hr 01 min 37 sec)
+checkpoint2/results/pll2_wh100.txt:Heartbeat CPU 0 instructions: 30000006 cycles: 21745378 heartbeat IPC: 1.157 cumulative IPC: 1.147 (Simulation time: 00 hr 02 min 34 sec)
+checkpoint2/results/pll2_wh100.txt:Simulation finished CPU 0 instructions: 30000002 cycles: 25954434 cumulative IPC: 1.156 (Simulation time: 00 hr 03 min 28 sec)
+checkpoint2/results/pll2_wh100.txt:Simulation complete CPU 0 instructions: 30000002 cycles: 25954434 cumulative IPC: 1.156 (Simulation time: 00 hr 03 min 28 sec)
+checkpoint2/results/pll2_wh100.txt:CPU 0 cumulative IPC: 1.156 instructions: 30000002 cycles: 25954434
+checkpoint2/results/pmmb_wh100.txt:Heartbeat CPU 0 instructions: 10000002 cycles: 3499438 heartbeat IPC: 2.858 cumulative IPC: 2.858 (Simulation time: 00 hr 00 min 38 sec)
+checkpoint2/results/pmmb_wh100.txt:Warmup finished CPU 0 instructions: 10000002 cycles: 3499438 cumulative IPC: 2.858 (Simulation time: 00 hr 00 min 38 sec)
+checkpoint2/results/pmmb_wh100.txt:Warmup complete CPU 0 instructions: 10000002 cycles: 3499438 cumulative IPC: 2.858 (Simulation time: 00 hr 00 min 38 sec)
+checkpoint2/results/pmmb_wh100.txt:Heartbeat CPU 0 instructions: 20000004 cycles: 9713224 heartbeat IPC: 1.609 cumulative IPC: 1.609 (Simulation time: 00 hr 01 min 18 sec)
+checkpoint2/results/pmmb_wh100.txt:Heartbeat CPU 0 instructions: 30000005 cycles: 15910506 heartbeat IPC: 1.614 cumulative IPC: 1.611 (Simulation time: 00 hr 01 min 57 sec)
+checkpoint2/results/pmmb_wh100.txt:Simulation finished CPU 0 instructions: 30000002 cycles: 18618773 cumulative IPC: 1.611 (Simulation time: 00 hr 02 min 36 sec)
+checkpoint2/results/pmmb_wh100.txt:Simulation complete CPU 0 instructions: 30000002 cycles: 18618773 cumulative IPC: 1.611 (Simulation time: 00 hr 02 min 36 sec)
+checkpoint2/results/pmmb_wh100.txt:CPU 0 cumulative IPC: 1.611 instructions: 30000002 cycles: 18618773
+checkpoint2/results/pmm_wh100.txt:Heartbeat CPU 0 instructions: 10000003 cycles: 3409909 heartbeat IPC: 2.933 cumulative IPC: 2.933 (Simulation time: 00 hr 00 min 37 sec)
+checkpoint2/results/pmm_wh100.txt:Warmup finished CPU 0 instructions: 10000003 cycles: 3409909 cumulative IPC: 2.933 (Simulation time: 00 hr 00 min 37 sec)
+checkpoint2/results/pmm_wh100.txt:Warmup complete CPU 0 instructions: 10000003 cycles: 3409909 cumulative IPC: 2.933 (Simulation time: 00 hr 00 min 37 sec)
+checkpoint2/results/pmm_wh100.txt:Heartbeat CPU 0 instructions: 20000003 cycles: 9812720 heartbeat IPC: 1.562 cumulative IPC: 1.562 (Simulation time: 00 hr 01 min 18 sec)
+checkpoint2/results/pmm_wh100.txt:Heartbeat CPU 0 instructions: 30000006 cycles: 16237132 heartbeat IPC: 1.557 cumulative IPC: 1.559 (Simulation time: 00 hr 01 min 58 sec)
+checkpoint2/results/pmm_wh100.txt:Simulation finished CPU 0 instructions: 30000000 cycles: 19240290 cumulative IPC: 1.559 (Simulation time: 00 hr 02 min 40 sec)
+checkpoint2/results/pmm_wh100.txt:Simulation complete CPU 0 instructions: 30000000 cycles: 19240290 cumulative IPC: 1.559 (Simulation time: 00 hr 02 min 40 sec)
+checkpoint2/results/pmm_wh100.txt:CPU 0 cumulative IPC: 1.559 instructions: 30000000 cycles: 19240290
+01:42 waiting: 3 sims alive
+01:44 waiting: 2 sims alive
+01:46 waiting: 2 sims alive
+01:48 waiting: 2 sims alive
+01:50 waiting: 2 sims alive
+01:52 waiting: 2 sims alive
+01:53 waiting: 2 sims alive
+01:55 waiting: 2 sims alive
+01:57 waiting: 2 sims alive
+=== variant wh2000  (s/GATE_WASTE_HIGH = [0-9]*/GATE_WASTE_HIGH = 2000/)  Sat Nov 21 01:59:40 AM UTC 2026 ===
+built ok, sweeping: jll4 pmm
+== cmm (C matmul w1)
+== cmmb (C matmul w2)
+== cll (C list w1)
+== cllb (C list w2)
+== java512_full (Java matmul w1)
+== java512b_full (Java matmul w2)
+== jll4 (Java list w1)
+== jll5 (Java list w2)
+== pmm (Python matmul w1)
+== pmmb (Python matmul w2)
+== pll2 (Python list w1)
+== pllb (Python list w2)
+checkpoint2/results/cmmb_wh2000.txt:Heartbeat CPU 0 instructions: 10000001 cycles: 3563791 heartbeat IPC: 2.806 cumulative IPC: 2.806 (Simulation time: 00 hr 00 min 34 sec)
+checkpoint2/results/cmmb_wh2000.txt:Warmup finished CPU 0 instructions: 10000001 cycles: 3563791 cumulative IPC: 2.806 (Simulation time: 00 hr 00 min 34 sec)
+checkpoint2/results/cmmb_wh2000.txt:Warmup complete CPU 0 instructions: 10000001 cycles: 3563791 cumulative IPC: 2.806 (Simulation time: 00 hr 00 min 34 sec)
+checkpoint2/results/cmmb_wh2000.txt:Heartbeat CPU 0 instructions: 20000001 cycles: 9283176 heartbeat IPC: 1.748 cumulative IPC: 1.748 (Simulation time: 00 hr 01 min 20 sec)
+checkpoint2/results/cmmb_wh2000.txt:Heartbeat CPU 0 instructions: 30000004 cycles: 15003952 heartbeat IPC: 1.748 cumulative IPC: 1.748 (Simulation time: 00 hr 02 min 04 sec)
+checkpoint2/results/cmmb_wh2000.txt:Simulation finished CPU 0 instructions: 30000000 cycles: 17162759 cumulative IPC: 1.748 (Simulation time: 00 hr 02 min 49 sec)
+checkpoint2/results/cmmb_wh2000.txt:Simulation complete CPU 0 instructions: 30000000 cycles: 17162759 cumulative IPC: 1.748 (Simulation time: 00 hr 02 min 49 sec)
+checkpoint2/results/cmmb_wh2000.txt:CPU 0 cumulative IPC: 1.748 instructions: 30000000 cycles: 17162759
+checkpoint2/results/cmm_wh2000.txt:Heartbeat CPU 0 instructions: 10000000 cycles: 3563499 heartbeat IPC: 2.806 cumulative IPC: 2.806 (Simulation time: 00 hr 00 min 33 sec)
+checkpoint2/results/cmm_wh2000.txt:Warmup finished CPU 0 instructions: 10000000 cycles: 3563499 cumulative IPC: 2.806 (Simulation time: 00 hr 00 min 33 sec)
+checkpoint2/results/cmm_wh2000.txt:Warmup complete CPU 0 instructions: 10000000 cycles: 3563499 cumulative IPC: 2.806 (Simulation time: 00 hr 00 min 33 sec)
+checkpoint2/results/cmm_wh2000.txt:Heartbeat CPU 0 instructions: 20000001 cycles: 9282019 heartbeat IPC: 1.749 cumulative IPC: 1.749 (Simulation time: 00 hr 01 min 17 sec)
+checkpoint2/results/cmm_wh2000.txt:Heartbeat CPU 0 instructions: 30000001 cycles: 15004443 heartbeat IPC: 1.748 cumulative IPC: 1.748 (Simulation time: 00 hr 02 min 02 sec)
+checkpoint2/results/cmm_wh2000.txt:Heartbeat CPU 0 instructions: 40000001 cycles: 20725651 heartbeat IPC: 1.748 cumulative IPC: 1.748 (Simulation time: 00 hr 02 min 46 sec)
+checkpoint2/results/cmm_wh2000.txt:Simulation finished CPU 0 instructions: 30000001 cycles: 17162152 cumulative IPC: 1.748 (Simulation time: 00 hr 02 min 46 sec)
+checkpoint2/results/cmm_wh2000.txt:Simulation complete CPU 0 instructions: 30000001 cycles: 17162152 cumulative IPC: 1.748 (Simulation time: 00 hr 02 min 46 sec)
+checkpoint2/results/cmm_wh2000.txt:CPU 0 cumulative IPC: 1.748 instructions: 30000001 cycles: 17162152
+checkpoint2/results/java512b_full_wh2000.txt:Heartbeat CPU 0 instructions: 10000003 cycles: 4495542 heartbeat IPC: 2.224 cumulative IPC: 2.224 (Simulation time: 00 hr 00 min 47 sec)
+checkpoint2/results/java512b_full_wh2000.txt:Warmup finished CPU 0 instructions: 10000003 cycles: 4495542 cumulative IPC: 2.224 (Simulation time: 00 hr 00 min 47 sec)
+checkpoint2/results/java512b_full_wh2000.txt:Warmup complete CPU 0 instructions: 10000003 cycles: 4495542 cumulative IPC: 2.224 (Simulation time: 00 hr 00 min 47 sec)
+checkpoint2/results/java512b_full_wh2000.txt:Heartbeat CPU 0 instructions: 20000007 cycles: 9293691 heartbeat IPC: 2.084 cumulative IPC: 2.084 (Simulation time: 00 hr 01 min 30 sec)
+checkpoint2/results/java512b_full_wh2000.txt:Heartbeat CPU 0 instructions: 30000009 cycles: 14087967 heartbeat IPC: 2.086 cumulative IPC: 2.085 (Simulation time: 00 hr 02 min 13 sec)
+checkpoint2/results/java512b_full_wh2000.txt:Simulation finished CPU 0 instructions: 30000003 cycles: 14383392 cumulative IPC: 2.086 (Simulation time: 00 hr 02 min 56 sec)
+checkpoint2/results/java512b_full_wh2000.txt:Simulation complete CPU 0 instructions: 30000003 cycles: 14383392 cumulative IPC: 2.086 (Simulation time: 00 hr 02 min 56 sec)
+checkpoint2/results/java512b_full_wh2000.txt:CPU 0 cumulative IPC: 2.086 instructions: 30000003 cycles: 14383392
+checkpoint2/results/java512_full_wh2000.txt:Heartbeat CPU 0 instructions: 10000004 cycles: 4494788 heartbeat IPC: 2.225 cumulative IPC: 2.225 (Simulation time: 00 hr 00 min 46 sec)
+checkpoint2/results/java512_full_wh2000.txt:Warmup finished CPU 0 instructions: 10000004 cycles: 4494788 cumulative IPC: 2.225 (Simulation time: 00 hr 00 min 46 sec)
+checkpoint2/results/java512_full_wh2000.txt:Warmup complete CPU 0 instructions: 10000004 cycles: 4494788 cumulative IPC: 2.225 (Simulation time: 00 hr 00 min 46 sec)
+checkpoint2/results/java512_full_wh2000.txt:Heartbeat CPU 0 instructions: 20000007 cycles: 9288380 heartbeat IPC: 2.086 cumulative IPC: 2.086 (Simulation time: 00 hr 01 min 28 sec)
+checkpoint2/results/java512_full_wh2000.txt:Heartbeat CPU 0 instructions: 30000007 cycles: 14085598 heartbeat IPC: 2.085 cumulative IPC: 2.085 (Simulation time: 00 hr 02 min 10 sec)
+checkpoint2/results/java512_full_wh2000.txt:Heartbeat CPU 0 instructions: 40000007 cycles: 18882240 heartbeat IPC: 2.085 cumulative IPC: 2.085 (Simulation time: 00 hr 02 min 53 sec)
+checkpoint2/results/java512_full_wh2000.txt:Simulation finished CPU 0 instructions: 30000003 cycles: 14387452 cumulative IPC: 2.085 (Simulation time: 00 hr 02 min 53 sec)
+checkpoint2/results/java512_full_wh2000.txt:Simulation complete CPU 0 instructions: 30000003 cycles: 14387452 cumulative IPC: 2.085 (Simulation time: 00 hr 02 min 53 sec)
+checkpoint2/results/java512_full_wh2000.txt:CPU 0 cumulative IPC: 2.085 instructions: 30000003 cycles: 14387452
+checkpoint2/results/jll4_wh2000.txt:Heartbeat CPU 0 instructions: 10000002 cycles: 3950364 heartbeat IPC: 2.531 cumulative IPC: 2.531 (Simulation time: 00 hr 00 min 47 sec)
+checkpoint2/results/jll4_wh2000.txt:Warmup finished CPU 0 instructions: 10000002 cycles: 3950364 cumulative IPC: 2.531 (Simulation time: 00 hr 00 min 47 sec)
+checkpoint2/results/jll4_wh2000.txt:Warmup complete CPU 0 instructions: 10000002 cycles: 3950364 cumulative IPC: 2.531 (Simulation time: 00 hr 00 min 47 sec)
+checkpoint2/results/jll4_wh2000.txt:Heartbeat CPU 0 instructions: 20000004 cycles: 92362410 heartbeat IPC: 0.1131 cumulative IPC: 0.1131 (Simulation time: 00 hr 08 min 23 sec)
+checkpoint2/results/jll4_wh2000.txt:Heartbeat CPU 0 instructions: 30000005 cycles: 181808326 heartbeat IPC: 0.1118 cumulative IPC: 0.1124 (Simulation time: 00 hr 16 min 01 sec)
+checkpoint2/results/jll4_wh2000.txt:Simulation finished CPU 0 instructions: 30000000 cycles: 269531701 cumulative IPC: 0.1113 (Simulation time: 00 hr 23 min 53 sec)
+checkpoint2/results/jll4_wh2000.txt:Simulation complete CPU 0 instructions: 30000000 cycles: 269531701 cumulative IPC: 0.1113 (Simulation time: 00 hr 23 min 53 sec)
+checkpoint2/results/jll4_wh2000.txt:CPU 0 cumulative IPC: 0.1113 instructions: 30000000 cycles: 269531701
+checkpoint2/results/jll5_wh2000.txt:Heartbeat CPU 0 instructions: 10000000 cycles: 3952777 heartbeat IPC: 2.53 cumulative IPC: 2.53 (Simulation time: 00 hr 00 min 47 sec)
+checkpoint2/results/jll5_wh2000.txt:Warmup finished CPU 0 instructions: 10000000 cycles: 3952777 cumulative IPC: 2.53 (Simulation time: 00 hr 00 min 47 sec)
+checkpoint2/results/jll5_wh2000.txt:Warmup complete CPU 0 instructions: 10000000 cycles: 3952777 cumulative IPC: 2.53 (Simulation time: 00 hr 00 min 47 sec)
+checkpoint2/results/jll5_wh2000.txt:Heartbeat CPU 0 instructions: 20000002 cycles: 95690166 heartbeat IPC: 0.109 cumulative IPC: 0.109 (Simulation time: 00 hr 08 min 47 sec)
+checkpoint2/results/jll5_wh2000.txt:Heartbeat CPU 0 instructions: 30000005 cycles: 187492849 heartbeat IPC: 0.1089 cumulative IPC: 0.109 (Simulation time: 00 hr 16 min 38 sec)
+checkpoint2/results/jll5_wh2000.txt:Simulation finished CPU 0 instructions: 30000000 cycles: 273880536 cumulative IPC: 0.1095 (Simulation time: 00 hr 24 min 22 sec)
+checkpoint2/results/jll5_wh2000.txt:Simulation complete CPU 0 instructions: 30000000 cycles: 273880536 cumulative IPC: 0.1095 (Simulation time: 00 hr 24 min 22 sec)
+checkpoint2/results/jll5_wh2000.txt:CPU 0 cumulative IPC: 0.1095 instructions: 30000000 cycles: 273880536
+checkpoint2/results/pll2_wh2000.txt:Heartbeat CPU 0 instructions: 10000003 cycles: 4307419 heartbeat IPC: 2.322 cumulative IPC: 2.322 (Simulation time: 00 hr 00 min 42 sec)
+checkpoint2/results/pll2_wh2000.txt:Warmup finished CPU 0 instructions: 10000003 cycles: 4307419 cumulative IPC: 2.322 (Simulation time: 00 hr 00 min 42 sec)
+checkpoint2/results/pll2_wh2000.txt:Warmup complete CPU 0 instructions: 10000003 cycles: 4307419 cumulative IPC: 2.322 (Simulation time: 00 hr 00 min 42 sec)
+checkpoint2/results/pll2_wh2000.txt:Heartbeat CPU 0 instructions: 20000003 cycles: 13098810 heartbeat IPC: 1.137 cumulative IPC: 1.137 (Simulation time: 00 hr 01 min 38 sec)
+checkpoint2/results/pll2_wh2000.txt:Heartbeat CPU 0 instructions: 30000006 cycles: 21745378 heartbeat IPC: 1.157 cumulative IPC: 1.147 (Simulation time: 00 hr 02 min 34 sec)
+checkpoint2/results/pll2_wh2000.txt:Simulation finished CPU 0 instructions: 30000002 cycles: 25954434 cumulative IPC: 1.156 (Simulation time: 00 hr 03 min 30 sec)
+checkpoint2/results/pll2_wh2000.txt:Simulation complete CPU 0 instructions: 30000002 cycles: 25954434 cumulative IPC: 1.156 (Simulation time: 00 hr 03 min 30 sec)
+checkpoint2/results/pll2_wh2000.txt:CPU 0 cumulative IPC: 1.156 instructions: 30000002 cycles: 25954434
+checkpoint2/results/pmmb_wh2000.txt:Heartbeat CPU 0 instructions: 10000002 cycles: 3499438 heartbeat IPC: 2.858 cumulative IPC: 2.858 (Simulation time: 00 hr 00 min 38 sec)
+checkpoint2/results/pmmb_wh2000.txt:Warmup finished CPU 0 instructions: 10000002 cycles: 3499438 cumulative IPC: 2.858 (Simulation time: 00 hr 00 min 38 sec)
+checkpoint2/results/pmmb_wh2000.txt:Warmup complete CPU 0 instructions: 10000002 cycles: 3499438 cumulative IPC: 2.858 (Simulation time: 00 hr 00 min 38 sec)
+checkpoint2/results/pmmb_wh2000.txt:Heartbeat CPU 0 instructions: 20000004 cycles: 9713224 heartbeat IPC: 1.609 cumulative IPC: 1.609 (Simulation time: 00 hr 01 min 19 sec)
+checkpoint2/results/pmmb_wh2000.txt:Heartbeat CPU 0 instructions: 30000005 cycles: 15910506 heartbeat IPC: 1.614 cumulative IPC: 1.611 (Simulation time: 00 hr 01 min 57 sec)
+checkpoint2/results/pmmb_wh2000.txt:Simulation finished CPU 0 instructions: 30000002 cycles: 18618773 cumulative IPC: 1.611 (Simulation time: 00 hr 02 min 36 sec)
+checkpoint2/results/pmmb_wh2000.txt:Simulation complete CPU 0 instructions: 30000002 cycles: 18618773 cumulative IPC: 1.611 (Simulation time: 00 hr 02 min 36 sec)
+checkpoint2/results/pmmb_wh2000.txt:CPU 0 cumulative IPC: 1.611 instructions: 30000002 cycles: 18618773
+checkpoint2/results/pmm_wh2000.txt:Heartbeat CPU 0 instructions: 10000003 cycles: 3409909 heartbeat IPC: 2.933 cumulative IPC: 2.933 (Simulation time: 00 hr 00 min 36 sec)
+checkpoint2/results/pmm_wh2000.txt:Warmup finished CPU 0 instructions: 10000003 cycles: 3409909 cumulative IPC: 2.933 (Simulation time: 00 hr 00 min 36 sec)
+checkpoint2/results/pmm_wh2000.txt:Warmup complete CPU 0 instructions: 10000003 cycles: 3409909 cumulative IPC: 2.933 (Simulation time: 00 hr 00 min 36 sec)
+checkpoint2/results/pmm_wh2000.txt:Heartbeat CPU 0 instructions: 20000003 cycles: 9812720 heartbeat IPC: 1.562 cumulative IPC: 1.562 (Simulation time: 00 hr 01 min 15 sec)
+checkpoint2/results/pmm_wh2000.txt:Heartbeat CPU 0 instructions: 30000006 cycles: 16237132 heartbeat IPC: 1.557 cumulative IPC: 1.559 (Simulation time: 00 hr 01 min 54 sec)
+checkpoint2/results/pmm_wh2000.txt:Simulation finished CPU 0 instructions: 30000000 cycles: 19240290 cumulative IPC: 1.559 (Simulation time: 00 hr 02 min 34 sec)
+checkpoint2/results/pmm_wh2000.txt:Simulation complete CPU 0 instructions: 30000000 cycles: 19240290 cumulative IPC: 1.559 (Simulation time: 00 hr 02 min 34 sec)
+checkpoint2/results/pmm_wh2000.txt:CPU 0 cumulative IPC: 1.559 instructions: 30000000 cycles: 19240290
+02:33 waiting: 3 sims alive
+02:35 waiting: 2 sims alive
+02:37 waiting: 2 sims alive
+02:39 waiting: 2 sims alive
+02:41 waiting: 2 sims alive
+02:43 waiting: 2 sims alive
+02:44 waiting: 2 sims alive
+02:46 waiting: 2 sims alive
+02:48 waiting: 2 sims alive
+02:50 waiting: 1 sims alive
+--- restoring pristine gate + rebuild ---
+--- final collect ---
+wrote /home/krishna/cs683/checkpoint2/results/summary.csv
+C       matmul  w1 no               IPC=1.738     spd=0.0%
+C       matmul  w1 spp_dev          IPC=1.748     spd=0.581%
+C       matmul  w1 ip_stride        IPC=1.738     spd=0.0%
+C       matmul  w1 control          IPC=1.748     spd=0.581%
+C       matmul  w1 gated            IPC=1.748     spd=0.581%
+C       matmul  w1 cap1             IPC=1.748     spd=0.581%
+C       matmul  w1 cap2             IPC=1.748     spd=0.581%
+C       matmul  w1 wh100            IPC=1.748     spd=0.581%
+C       matmul  w1 wh2000           IPC=1.748     spd=0.581%
+C       matmul  w2 no               IPC=1.737     spd=0.0%
+C       matmul  w2 spp_dev          IPC=1.748     spd=0.645%
+C       matmul  w2 ip_stride        IPC=1.737     spd=0.0%
+C       matmul  w2 control          IPC=1.748     spd=0.645%
+C       matmul  w2 gated            IPC=1.748     spd=0.645%
+C       matmul  w2 cap1             IPC=1.748     spd=0.645%
+C       matmul  w2 cap2             IPC=1.748     spd=0.645%
+C       matmul  w2 wh100            IPC=1.748     spd=0.645%
+C       matmul  w2 wh2000           IPC=1.748     spd=0.645%
+C       list    w1 no               IPC=0.04304   spd=0.0%
+C       list    w1 spp_dev          IPC=0.04304   spd=-0.007%
+C       list    w1 ip_stride        IPC=0.04304   spd=0.0%
+C       list    w1 control          IPC=0.04304   spd=-0.007%
+C       list    w1 gated            IPC=0.04304   spd=-0.007%
+C       list    w1 cap1             IPC=0.04304   spd=-0.007%
+C       list    w1 cap2             IPC=0.04304   spd=-0.007%
+C       list    w1 wh100            IPC=0.04304   spd=-0.007%
+C       list    w1 wh2000           IPC=0.04304   spd=-0.007%
+C       list    w2 no               IPC=0.04304   spd=0.0%
+C       list    w2 spp_dev          IPC=0.04305   spd=0.01%
+C       list    w2 ip_stride        IPC=0.04304   spd=0.0%
+C       list    w2 control          IPC=0.04305   spd=0.01%
+C       list    w2 gated            IPC=0.04305   spd=0.01%
+C       list    w2 cap1             IPC=0.04305   spd=0.01%
+C       list    w2 cap2             IPC=0.04305   spd=0.01%
+C       list    w2 wh100            IPC=0.04305   spd=0.01%
+C       list    w2 wh2000           IPC=0.04305   spd=0.01%
+Java    matmul  w1 no               IPC=2.086     spd=0.0%
+Java    matmul  w1 spp_dev          IPC=2.085     spd=-0.025%
+Java    matmul  w1 ip_stride        IPC=2.091     spd=0.243%
+Java    matmul  w1 control          IPC=2.085     spd=-0.025%
+Java    matmul  w1 gated            IPC=2.085     spd=-0.025%
+Java    matmul  w1 cap1             IPC=2.085     spd=-0.025%
+Java    matmul  w1 cap2             IPC=2.085     spd=-0.025%
+Java    matmul  w1 wh100            IPC=2.085     spd=-0.025%
+Java    matmul  w1 wh2000           IPC=2.085     spd=-0.025%
+Java    matmul  w2 no               IPC=2.084     spd=0.0%
+Java    matmul  w2 spp_dev          IPC=2.086     spd=0.1%
+Java    matmul  w2 ip_stride        IPC=2.091     spd=0.35%
+Java    matmul  w2 control          IPC=2.086     spd=0.1%
+Java    matmul  w2 gated            IPC=2.086     spd=0.1%
+Java    matmul  w2 cap1             IPC=2.086     spd=0.1%
+Java    matmul  w2 cap2             IPC=2.086     spd=0.1%
+Java    matmul  w2 wh100            IPC=2.086     spd=0.1%
+Java    matmul  w2 wh2000           IPC=2.086     spd=0.1%
+Java    list    w1 no               IPC=0.1145    spd=0.0%
+Java    list    w1 spp_dev          IPC=0.1113    spd=-2.883%
+Java    list    w1 ip_stride        IPC=0.1145    spd=0.0%
+Java    list    w1 control          IPC=0.1113    spd=-2.883%
+Java    list    w1 gated            IPC=0.1113    spd=-2.883%
+Java    list    w1 cap1             IPC=0.1113    spd=-2.883%
+Java    list    w1 cap2             IPC=0.1113    spd=-2.883%
+Java    list    w1 wh100            IPC=0.1113    spd=-2.883%
+Java    list    w1 wh2000           IPC=0.1113    spd=-2.883%
+Java    list    w2 no               IPC=0.1144    spd=0.0%
+Java    list    w2 spp_dev          IPC=0.1095    spd=-4.436%
+Java    list    w2 ip_stride        IPC=0.1144    spd=0.0%
+Java    list    w2 control          IPC=0.1095    spd=-4.436%
+Java    list    w2 gated            IPC=0.1095    spd=-4.436%
+Java    list    w2 cap1             IPC=0.1095    spd=-4.436%
+Java    list    w2 cap2             IPC=0.1095    spd=-4.436%
+Java    list    w2 wh100            IPC=0.1095    spd=-4.436%
+Java    list    w2 wh2000           IPC=0.1095    spd=-4.436%
+Python  matmul  w1 no               IPC=1.461     spd=0.0%
+Python  matmul  w1 spp_dev          IPC=1.559     spd=6.283%
+Python  matmul  w1 ip_stride        IPC=1.461     spd=0.013%
+Python  matmul  w1 control          IPC=1.559     spd=6.283%
+Python  matmul  w1 gated            IPC=1.559     spd=6.283%
+Python  matmul  w1 cap1             IPC=1.559     spd=6.283%
+Python  matmul  w1 cap2             IPC=1.559     spd=6.283%
+Python  matmul  w1 wh100            IPC=1.559     spd=6.283%
+Python  matmul  w1 wh2000           IPC=1.559     spd=6.283%
+Python  matmul  w2 no               IPC=1.505     spd=0.0%
+Python  matmul  w2 spp_dev          IPC=1.611     spd=6.614%
+Python  matmul  w2 ip_stride        IPC=1.506     spd=0.06%
+Python  matmul  w2 control          IPC=1.611     spd=6.614%
+Python  matmul  w2 gated            IPC=1.611     spd=6.614%
+Python  matmul  w2 cap1             IPC=1.611     spd=6.614%
+Python  matmul  w2 cap2             IPC=1.611     spd=6.614%
+Python  matmul  w2 wh100            IPC=1.611     spd=6.614%
+Python  matmul  w2 wh2000           IPC=1.611     spd=6.614%
+Python  list    w1 no               IPC=1.153     spd=0.0%
+Python  list    w1 spp_dev          IPC=1.156     spd=0.234%
+Python  list    w1 ip_stride        IPC=1.153     spd=0.0%
+Python  list    w1 control          IPC=1.156     spd=0.234%
+Python  list    w1 gated            IPC=1.156     spd=0.234%
+Python  list    w1 cap1             IPC=1.156     spd=0.234%
+Python  list    w1 cap2             IPC=1.156     spd=0.234%
+Python  list    w1 wh100            IPC=1.156     spd=0.234%
+Python  list    w1 wh2000           IPC=1.156     spd=0.234%
+Python  list    w2 no               IPC=1.13      spd=0.0%
+Python  list    w2 spp_dev          IPC=1.133     spd=0.286%
+Python  list    w2 ip_stride        IPC=1.13      spd=0.0%
+Python  list    w2 control          IPC=1.133     spd=0.286%
+Python  list    w2 gated            IPC=1.133     spd=0.286%
+Python  list    w2 cap1             IPC=1.133     spd=0.286%
+Python  list    w2 cap2             IPC=1.133     spd=0.286%
+Python  list    w2 wh100            IPC=1.133     spd=0.286%
+Python  list    w2 wh2000           IPC=1.133     spd=0.286%
+================ overnight DONE Sat Nov 21 02:52:35 AM UTC 2026 ================

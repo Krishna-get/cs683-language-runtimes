@@ -1,0 +1,13 @@
+# lang	algo	window	trace_basename	cp1_result_prefix
+C	matmul	1	long_cmm	cmm
+C	matmul	2	long_cmm_b	cmmb
+C	list	1	long_cll	cll
+C	list	2	long_cll_b	cllb
+Java	matmul	1	long_java_512	java512_full
+Java	matmul	2	long_java_512_b	java512b_full
+Java	list	1	long_jll4	jll4
+Java	list	2	long_jll5	jll5
+Python	matmul	1	long_pmm	pmm
+Python	matmul	2	long_pmm_b	pmmb
+Python	list	1	long_pll2	pll2
+Python	list	2	long_pll_b	pllb

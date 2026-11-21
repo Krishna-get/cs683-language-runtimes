@@ -1,0 +1,332 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=2.2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{mdframed}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, linkcolor=blue!50!black, urlcolor=blue!50!black}
+
+\definecolor{qbg}{RGB}{232,240,254}
+\newmdenv[backgroundcolor=qbg,linewidth=0pt,skipabove=10pt,skipbelow=6pt,
+          innertopmargin=6pt,innerbottommargin=6pt]{question}
+
+\newcommand{\Q}[1]{\begin{question}\textbf{#1}\end{question}}
+
+\title{CS683 Checkpoint I --- Viva Preparation\\
+\large Microarchitectural Characterisation of Language Runtimes}
+\author{Krishna Kukreja \quad 24b3971}
+\date{}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\bigskip
+
+\section{Key numbers to have ready}
+
+\begin{center}
+\begin{tabular}{lrrr}
+\toprule
+& \textbf{C} & \textbf{Java} & \textbf{Python} \\
+\midrule
+IPC, matmul            & 1.738   & 2.086  & 1.461 \\
+IPC, list              & 0.04304 & 0.1145 & 1.153 \\
+Cycles / multiply-add  & 4.07    & 4.79   & 1{,}513 \\
+Cycles / node          & 186     & $\approx$63$^{*}$ & 1{,}279 \\
+L2 load MPKI, matmul   & 143.1   & 6.10   & 0.29 \\
+LLC load MPKI, list    & 100.6   & 137.3  & 1.83 \\
+Branch MPKI, matmul    & 0.279   & 0.391  & 9.11 \\
+L1I misses (all windows) & 0     & 0      & 0 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\noindent$^{*}$ Distorted --- see Section~\ref{sec:javalist}.
+
+\medskip
+\noindent\textbf{Three headline results.}
+\begin{itemize}[leftmargin=*,nosep]
+  \item Python's time penalty: $372\times$ on matmul, $6.9\times$ on the list walk. Not a constant.
+  \item A 16-byte Java array header changes L2 misses by $23\times$ against C.
+  \item \texttt{ip\_stride} gives $\le 0.35\%$ anywhere; \texttt{spp\_dev} helps only Python matmul ($+6.7\%$) and hurts Java's list ($-2.8\%$).
+\end{itemize}
+
+\section{The tracer patch}
+
+\Q{Walk me through your tracer patch.}
+
+The stock ChampSim Pin tracer has one global \texttt{curr\_instr} buffer, one output
+file and shared counters. Pin invokes the analysis routines on every thread, and the
+JVM runs 14 of them, so records from compiler and GC threads interleaved into the
+same buffer. The result was 23 million records with a zero instruction pointer and
+6.8 million with register ids $\ge 128$, which crashed ChampSim with
+\texttt{vector::\_M\_range\_check}.
+
+The patch adds a \texttt{-app\_thread N} knob and an early return in four callbacks:
+\texttt{ResetCurrentInstruction}, \texttt{BranchOrNot}, \texttt{WriteToSet} and
+\texttt{ShouldWrite}. The check is
+\texttt{if (PIN\_ThreadId() != KnobAppThread.Value()) return;}
+
+\Q{Why does \texttt{WriteCurrentInstruction} need no check?}
+
+It only executes when \texttt{ShouldWrite} returned true, and \texttt{ShouldWrite}
+already filters by thread.
+
+\Q{Why must the check in \texttt{ShouldWrite} come before anything else?}
+
+Because \texttt{ShouldWrite} increments \texttt{skippedInstrCount}. If other threads
+reached that line, their instructions would count toward the \texttt{-s} skip and the
+trace window would land in the wrong phase of the program.
+
+\Q{Why thread 1 for Java and thread 0 for C and Python?}
+
+Pin numbers threads from 0. The JVM launcher occupies thread 0, so the application
+thread is 1. A single-threaded C or Python program is thread 0. The knob defaults to
+1, which is why every C and Python trace passes \texttt{-app\_thread 0} explicitly.
+
+\section{Trace windows}
+
+\Q{How did you choose where each window starts?}
+
+C uses ROI marker functions around the kernel. Java and Python use an instruction
+skip count measured by a probe run \emph{under the tracer itself}: the patched tracer
+prints the application thread's instruction count at exit, and the window is placed
+relative to that.
+
+\Q{Why not measure the skip with a lighter tool?}
+
+Because JIT timing depends on tool overhead. The Java application thread executes
+9.09\,B instructions under the tracer but 14.58\,B under a light instruction counter.
+A skip chosen from the light counter lands in a completely different phase.
+
+\Q{How do you know the windows are in steady state?}
+
+Every workload was traced at two independent positions. All six pairs agree within
+3.0\% on IPC, and the sign of every prefetcher effect is identical in both windows.
+The largest spread is Python matmul at 3\%, which comes from row-to-row variation in
+branch behaviour (MPKI 9.1 vs 7.6) and changes no conclusion.
+
+\Q{What went wrong with one of your early windows?}
+
+A Python list window landed inside interpreter teardown. Branch MPKI was 18.15 and it
+reported a \texttt{spp\_dev} speed-up of $+73.8\%$. Moving the window two passes into
+the loop, with \texttt{os.\_exit(0)} to skip teardown, gave MPKI 1.50 and $+0.23\%$.
+
+\section{Workload equivalence}
+
+\Q{How do you know the three languages do the same work?}
+
+The matmul checksum is 16{,}392{,}906{,}262{,}816 in all three, and the list checksum
+($s \leftarrow 31s + \text{value}$) matches for every pass count used. NumPy was used
+only as an external check, never inside a workload.
+
+\Q{Why do your matrix values start at 300?}
+
+CPython caches small integers from $-5$ to 256 as shared objects. Values in that range
+would make matrix elements alias to the same object, changing the memory behaviour. An
+assertion verifies that all $N^2$ elements have distinct \texttt{id()}.
+
+\Q{Why $N = 512$ and not 256?}
+
+At 256 the whole working set fits comfortably and the L2 effects do not appear. At 512,
+B is 1\,MB: it overflows the 512\,KB L2 but fits the 2\,MB LLC, which is the regime that
+makes the prefetcher question interesting.
+
+\section{Cache behaviour: the 23\texorpdfstring{$\times$}{x} gap}
+
+\Q{Explain why Java matmul has 6.1 L2 MPKI where C has 143.}
+
+L2 is 1{,}024 sets, 8 ways, 64-byte lines.
+
+\textbf{C:} rows are 2{,}048\,B apart, exactly 32 lines. Each row advances the set index
+by 32, and $\gcd(32, 1024) = 32$, so all 512 rows of the column walk of B map into only
+32 distinct sets. Those hold $32 \times 8 = 256$ lines, but the walk needs 512. It thrashes.
+
+\textbf{Java:} the 16-byte array header makes rows 2{,}064\,B apart, i.e. 32.25 lines.
+Four rows advance 129 lines, and $\gcd(129, 1024) = 1$, so the index cycles through all
+1{,}024 sets. The 512-line working set spreads out and fits.
+
+\Q{How do you know the JIT isn't doing a different loop?}
+
+I extracted the source-memory addresses from both traces, grouped them by instruction
+pointer, and compared strides.
+
+\begin{center}
+\begin{tabular}{lrr}
+\toprule
+& \textbf{C} & \textbf{Java} \\
+\midrule
+A load stride & 4\,B & 16\,B \\
+B load stride & 2{,}048\,B & 8{,}256\,B \\
+Load instructions in loop & 4 & 24 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+$8{,}256 = 4 \times 2{,}064$ and $16 = 4 \times 4$: C2 unrolled the inner loop four
+times, but the traversal order is identical. \texttt{-XX:+PrintCompilation} confirms
+\texttt{MatrixMult::multiply} reached tier 4 (C2).
+
+\Q{Does this undermine your "identical work" premise?}
+
+No --- it refines it. The arithmetic is identical, verified by checksum. What differs is
+the data layout the runtime imposes, and that is exactly the kind of runtime effect the
+project set out to measure.
+
+\section{Prefetchers}
+
+\Q{Why does \texttt{ip\_stride} issue zero prefetches on C matmul?}
+
+It tracks one stride per instruction pointer in a 256-set, 4-way table, needs to observe
+the same stride twice before it issues, prefetches a few lines ahead, and stops at a
+4\,KB page boundary. B's rows are 2{,}048\,B apart, so only two rows fit in a page and the
+stride never repeats inside one. It never confirms, so it never issues. On the list walks
+there is no stride at all.
+
+\Q{Why does \texttt{spp\_dev} help Python matmul but barely help C?}
+
+Timeliness, not stride destruction.
+
+\begin{center}
+\begin{tabular}{lrrrr}
+\toprule
+\textbf{spp\_dev} & \textbf{Issued} & \textbf{Useful} & \textbf{Merged} & \textbf{Speed-up} \\
+\midrule
+C matmul      & 3{,}702{,}262 & 353   & 99.1\% & $+0.58\%$ \\
+Python matmul & 241{,}252     & 2{,}540 & $\approx 0\%$ & $+6.70\%$ \\
+C list        & 3{,}672{,}718 & 0     & 99.9\% & $-0.01\%$ \\
+Java list     & 4{,}766{,}185 & 2     & 54\%   & $-2.80\%$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+On C matmul, 99.1\% of requests merge into a demand miss already in flight: right address,
+too late. Demand LLC misses fall 74\% and the gain is 0.6\%. On Python there is almost no
+merging, so prefetches land before the load needs them and 83\% of demand LLC misses become
+hits. The interpreter's long instruction path per data access is what supplies the slack.
+
+\Q{Why does \texttt{spp\_dev} make Java's list walk worse?}
+
+4.77\,M requests, 2.11\,M useless fills, 2 useful. DRAM traffic rises 44\% for no coverage,
+and the bandwidth pressure costs about 3\% in cycles.
+
+\Q{Why did you change the prefetch accuracy formula?}
+
+The proposal used \texttt{USEFUL/(USEFUL+USELESS)}. ChampSim's \texttt{USELESS} counter only
+increments when an unused prefetched line is evicted, so it undercounts severely. I used
+useful $\div$ fills, with fills = L2 prefetch misses $-$ merged, which counts every line
+actually brought in.
+
+\section{The Java list artefact}
+\label{sec:javalist}
+
+\Q{Java's list IPC is three times better than C's. Isn't that suspicious?}
+
+Yes, and it is an artefact.
+
+\begin{center}
+\begin{tabular}{lrr}
+\toprule
+& \textbf{C list} & \textbf{Java list} \\
+\midrule
+IPC (no prefetcher)        & 0.0430 & 0.1145 \\
+Cycles per LLC load miss   & 231    & 63.6 \\
+Average LLC miss latency   & 179    & 213 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+C completes one miss per 231 cycles, about one miss latency: a true serial chase. Java
+completes one per 63.6 cycles although each takes 213, so roughly 3.4 misses overlap. A
+strict dependent chain cannot do that. ChampSim tracks dependences through register ids
+only, so the JIT-unrolled loads appear independent to it.
+
+Use the Java list for relative prefetcher effects within Java, not for absolute speed
+against C. Two reruns with \texttt{-Xbatch} and 300 passes agree (0.1145, 0.1144); earlier
+runs with different JIT code gave 0.25 and 0.09, which is why the flags are now fixed.
+
+\section{Front end, branches, TLB}
+
+\Q{Zero L1I misses everywhere --- is that believable?}
+
+In steady state, yes: the hot loop is small in all three runtimes, and CPython 3.12's eval
+loop has 140 opcodes (\texttt{len(dis.opmap)}), which fits in 32\,KB. This is consistent with
+Rajan et al.'s finding that interpreter I-cache locality is good, though they measured
+0.16--1.33\% on much smaller caches, not zero.
+
+The caveat is that JVM \emph{start-up} does miss: 17.1\% of fetches, with 240{,}150 distinct
+instruction pointers from class loading and the bytecode interpreter. A single steady-state
+window hides this.
+
+\Q{Note on the proposal's opcode claim.}
+
+The proposal said CPython 3.12's bytecode set is "much larger than the $\sim$220 opcodes of
+2002". The measurement is 140, i.e.\ fewer. The expectation was wrong and the measurement
+stands.
+
+\Q{Where does Python's data-side cost actually sit?}
+
+37--47\% of its L1D accesses are stores (reference counting, stack and frame writes), and
+essentially all hit L1D --- store miss rate 0.009--0.024\%. So the cost is instruction count
+and L1 traffic, not write misses.
+
+\section{JIT transition}
+
+\begin{center}
+\begin{tabular}{lrrr}
+\toprule
+\textbf{Java matmul} & \textbf{Start-up} & \textbf{300\,M in} & \textbf{Steady} \\
+\midrule
+IPC                  & 0.727  & 1.559   & 2.086 \\
+Branch MPKI          & 12.81  & 0.165   & 0.391 \\
+L1I miss rate        & 17.1\% & 0.015\% & 0\% \\
+Stores (share)       & 42.3\% & 16.7\%  & 0.05\% \\
+\texttt{spp\_dev}    & $+8.8\%$ & $+6.9\%$ & $-0.03\%$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\Q{What does this show?}
+
+IPC triples from start-up to steady state and branch MPKI falls from 12.8 to under 0.4. The
+300\,M window is a transition, not steady: compiled code (MPKI 0.17, clean L1I) but different
+data behaviour. Note also that \texttt{spp\_dev} helps during warm-up and not in steady state,
+so prefetcher conclusions do not transfer between phases.
+
+\section{Limitations}
+
+\begin{itemize}[leftmargin=*]
+  \item \textbf{Sampling.} Two windows show stability ($\le 3\%$), not a confidence interval.
+  \item \textbf{Java list timing} is distorted (Section~\ref{sec:javalist}).
+  \item \textbf{Compiler threads not traced.} Rajan's code-installation writes happen on JIT
+        compiler threads, which the per-thread filter excludes. Left for Checkpoint II.
+  \item \textbf{One machine model.} Only the L2 prefetcher varies.
+  \item \textbf{Prior-work wording.} The proposal's "16\,KB L1" and "no study asks\ldots" claims
+        were not verified against the papers. Rohou et al.\ (2015) used Nehalem and Haswell,
+        which have 32\,KB L1, so the blanket claim is already wrong for one citation.
+\end{itemize}
+
+\Q{What would you do differently?}
+
+More than two windows per workload, so the stability claim becomes a confidence interval. Trace
+the JIT compiler threads. And force the Java list into a genuinely serial chain --- for example
+by carrying a dependence through memory --- so its timing is faithful.
+
+\section{Checkpoint II}
+
+\begin{enumerate}[leftmargin=*]
+  \item Split interpreter overhead from algorithm cost: per-bytecode cost, and a data-versus-instruction breakdown.
+  \item Establish the mechanism behind \texttt{spp\_dev}'s Python gain and Java-list failure.
+  \item Implement one targeted mitigation in ChampSim and report recovered IPC and MPKI.
+\end{enumerate}
+
+\vspace{1em}
+\noindent\rule{\textwidth}{0.4pt}
+\vspace{0.5em}
+
+\noindent\small Repository: \url{https://github.com/Krishna-get/cs683-language-runtimes}
+
+\end{document}
